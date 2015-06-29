@@ -1,4 +1,3 @@
-
 /**b_main_slider**/
 $(document).ready(function(){
     $('.b_main_slider').slick();
@@ -44,7 +43,8 @@ $(document).ready(function(){
            {
                breakpoint: 600,
                settings: {
-
+                   rows: 1,
+                   slidesPerRow: 1,
                    slidesToScroll: 2,
                    slidesToShow: 2
                }
