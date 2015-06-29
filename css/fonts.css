@@ -1,0 +1,169 @@
+/*style for all*/
+h2 {
+  color: #903349;
+  font-size: 48px;
+  line-height: 1;
+  text-align: left;
+}
+@media screen and (max-width: 960px) {
+  h2 {
+    font-size: 41px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 36px;
+    line-height: 1.333;
+  }
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #903349;
+  line-height: 1.25;
+}
+.txt_inner {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #000000;
+}
+.b_section_title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+/*s-head*/
+.b_head_txt .txt {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  color: #000000;
+}
+.b_nav_menu > li > a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .b_nav_menu > li > a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2.1;
+    /* ��������� �� ������ li, � ������ 2.87*/
+    color: #ffffff;
+  }
+}
+.sub_menu_l2 li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 2.63;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .sub_menu_l2 li a {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 2.33;
+  }
+}
+.languages a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+}
+.languages a:hover {
+  color: #903349;
+}
+@media screen and (max-width: 800px) {
+  .languages a {
+    font-size: 26px;
+    line-height: 1.77;
+  }
+}
+/*s_about_clinic*/
+.b_txt_about_clinic h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  .b_txt_about_clinic h2 {
+    font-weight: 600;
+  }
+}
+/*s_services*/
+.icon_title_services {
+  text-transform: lowercase;
+  color: #903349;
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  line-height: 1.67;
+  text-align: center;
+}
+/*s_articles*/
+.b_description_articles {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*s_footer*/
+.phone_logo_inner {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #903349;
+  font-weight: 700;
+  line-height: 1.15;
+}
+@media screen and (max-width: 800px) {
+  .phone_logo_inner {
+    font-size: 35.36px;
+  }
+}
+.footer_info_inner {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.footer_ambulance {
+  line-height: 1.3;
+}
+@media screen and (max-width: 800px) {
+  .footer_ambulance {
+    font-size: 27.2px;
+  }
+}
+.footer_phone_inner {
+  font-weight: 700;
+}
+.b_title_social {
+  line-height: 1.3;
+}
+@media screen and (max-width: 600px) {
+  .b_title_social {
+    font-size: 24px;
+    line-height: 1.08;
+  }
+}
