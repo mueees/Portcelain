@@ -23,29 +23,30 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         rows: 3,
+        slidesPerRow: 1,
         responsive: [
-          {
-              breakpoint: 800,
-               settings: {
-                   slidesToShow: 3,
-                   slidesToScroll: 3,
-                   rows: 2
+            { breakpoint: 960,
+                settings: {
+                    rows: 3,
+                    slidesPerRow: 1,
+                    slidesToScroll: 4,
+                    slidesToShow: 4
+                }
+            },
+            { breakpoint: 800,
+                settings: {
+                    rows: 2,
+                    slidesPerRow: 1,
+                    slidesToScroll: 3,
+                    slidesToShow: 3
                }
            },
            {
                breakpoint: 600,
                settings: {
-                   slidesToShow: 2,
+
                    slidesToScroll: 2,
-                   rows: 1
-               }
-           },
-           {
-               breakpoint: 320,
-               settings: {
-                   slidesToShow: 1,
-                   slidesToScroll: 1,
-                   rows: 1
+                   slidesToShow: 2
                }
            }]
     });
