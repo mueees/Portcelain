@@ -1,40 +1,59 @@
-/*correct css carousel b_nav_clients*/
-.b_nav_clients.slick-slider {
+@import "breakpoints";
+/*correct css b_main-slider*/
+.b_main-slider.slick-slider {
   margin-bottom: 0;
 }
-.b_nav_clients .slick-prev:before,
-.b_nav_clients .slick-next:before {
+
+/*correct css carousel b_nav-clients*/
+.b_nav-clients.slick-slider {
+  margin: 0;
+  @media @tablet {
+    margin: 0 30px;
+  }
+}
+.b_nav-clients .slick-prev:before,
+.b_nav-clients .slick-next:before {
   content: '';
 }
-.b_nav_clients .slick-prev,
-.b_nav_clients .slick-next {
+.b_nav-clients .slick-prev,
+.b_nav-clients .slick-next {
   margin-top: 0;
   width: 30px;
   height: 73px;
   opacity: 0.7;
   background-size: cover;
 }
-.b_nav_clients .slick-prev {
-  top: 41.723%;/*(441-73)/2/441*/
+.b_nav-clients .slick-prev {
+  top: 50%;
+  bottom: 50%;
+  margin: auto;
   left: -30px;
   background: url("../img/arrow_left.png") no-repeat;
 }
-.b_nav_clients .slick-next {
-  top: 41.723%;
+.b_nav-clients .slick-next {
+  top: 50%;
+  bottom: 50%;
+  margin: auto;
   right: -30px;
   background: url("../img/arrow_right.png") no-repeat;
 }
-.b_nav_clients .slick-prev:hover,
-.b_nav_clients .slick-prev:focus {
+.b_nav-clients .slick-prev:hover,
+.b_nav-clients .slick-prev:focus {
   background: url("../img/arrow_left.png") no-repeat;
   background-size: cover;
 }
-.b_nav_clients .slick-next:hover,
-.b_nav_clients .slick-next:focus {
+.b_nav-clients .slick-next:hover,
+.b_nav-clients .slick-next:focus {
   background: url("../img/arrow_right.png") no-repeat;
   background-size: cover;
 }
-.b_nav_clients .slick-prev:hover,
-.b_nav_clients .slick-next:hover{
+.b_nav-clients .slick-prev:hover,
+.b_nav-clients .slick-next:hover{
   opacity: 1;
+}
+.b_nav-clients .slick-slide img{
+  padding: 25px 8px;
+  max-width: 200px;
+  height: auto;
+  vertical-align: bottom;
 }

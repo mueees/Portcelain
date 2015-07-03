@@ -23,14 +23,14 @@ h3 {
   color: #903349;
   line-height: 1.25;
 }
-.txt_inner {
+.description-inner p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.44;
   color: #000000;
 }
-.b_section_title {
+.b_section-title {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -38,46 +38,88 @@ h3 {
   text-transform: uppercase;
 }
 /*s-head*/
-.b_head_txt .txt {
+.slide-title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1;
   color: #000000;
 }
-.b_nav_menu > li > a {
+.b_nav-menu > li {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color: #000000;
   text-transform: uppercase;
-  cursor: pointer;
-  text-decoration: none;
+}
+.b_nav-menu > li:hover > a {
+  color: #903349;
+}
+.b_nav-menu > li:hover > span {
+  color: #903349;
 }
 @media screen and (max-width: 800px) {
-  .b_nav_menu > li > a {
+  .b_nav-menu > li {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
     font-weight: 700;
-    line-height: 2.1;
-    /* ��������� �� ������ li, � ������ 2.87*/
+    font-size: 28px;
+  }
+}
+.b_nav-menu > li > a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 1.2;
+}
+@media screen and (max-width: 800px) {
+  .b_nav-menu > li > a {
     color: #ffffff;
   }
 }
-.sub_menu_l2 li a {
+.b_nav-menu > li > span {
+  color: #000000;
+  line-height: 1.2;
+}
+@media screen and (max-width: 800px) {
+  .b_nav-menu > li > span {
+    color: #ffffff;
+  }
+}
+.sub-menu-l2 li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #000000;
-  line-height: 2.63;
-  cursor: pointer;
-  text-decoration: none;
+  text-transform: none;
+}
+.sub-menu-l2 li:hover a {
+  color: #ffffff;
 }
 @media screen and (max-width: 800px) {
-  .sub_menu_l2 li a {
+  .sub-menu-l2 li {
+    font-size: 28px;
+  }
+  .sub-menu-l2 li:hover a {
+    color: #903349;
+  }
+  .sub-menu-l2 li:hover span {
+    color: #903349;
+  }
+}
+.sub-menu-l2 li a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 1.2;
+}
+@media screen and (max-width: 800px) {
+  .sub-menu-l2 li a {
     color: #ffffff;
-    font-size: 30px;
-    line-height: 2.33;
+  }
+}
+.sub-menu-l2 li span {
+  color: #000000;
+  line-height: 1.2;
+}
+@media screen and (max-width: 800px) {
+  .sub-menu-l2 li span {
+    color: #ffffff;
   }
 }
 .languages a {
@@ -98,18 +140,21 @@ h3 {
     line-height: 1.77;
   }
 }
-/*s_about_clinic*/
-.b_txt_about_clinic h2 {
+.languages a.select {
+  color: #903349;
+}
+/*s_main-info*/
+.description-inner h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 @media screen and (max-width: 600px) {
-  .b_txt_about_clinic h2 {
+  .description-inner h2 {
     font-weight: 600;
   }
 }
 /*s_services*/
-.icon_title_services {
+.icon-title-services {
   text-transform: lowercase;
   color: #903349;
   font-size: 18px;
@@ -119,7 +164,7 @@ h3 {
   text-align: center;
 }
 /*s_articles*/
-.b_description_articles {
+.article-list p {
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -128,7 +173,7 @@ h3 {
   line-height: 1.5;
 }
 /*s_footer*/
-.phone_logo_inner {
+.phone-logo-inner {
   font-family: 'Open Sans', sans-serif;
   font-size: 26px;
   color: #903349;
@@ -136,33 +181,33 @@ h3 {
   line-height: 1.15;
 }
 @media screen and (max-width: 800px) {
-  .phone_logo_inner {
+  .phone-logo-inner {
     font-size: 35.36px;
   }
 }
-.footer_info_inner {
+.footer-info-inner {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #000000;
   font-weight: 400;
   line-height: 1.35;
 }
-.footer_ambulance {
+.footer-ambulance {
   line-height: 1.3;
 }
 @media screen and (max-width: 800px) {
-  .footer_ambulance {
+  .footer-ambulance {
     font-size: 27.2px;
   }
 }
-.footer_phone_inner {
+.footer-phone-inner {
   font-weight: 700;
 }
-.b_title_social {
+.title-social {
   line-height: 1.3;
 }
 @media screen and (max-width: 600px) {
-  .b_title_social {
+  .title-social {
     font-size: 24px;
     line-height: 1.08;
   }
