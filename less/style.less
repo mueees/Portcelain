@@ -1,0 +1,137 @@
+@import "colours.less";
+@import "mixins";
+@import "breakpoints";
+@import "height ";
+
+/*section s_main-info*/
+.s_main-info {
+  .image-inner {
+    width: 32.022%; /*301/940*/
+  }
+  .description-inner {
+    width: 48.937%; /* 460/940 */
+    padding: 0 0 0 10.639%; /* 100/940 */
+    @media @tablet{
+      width: 60%;
+      padding: 0 0 0 7%;
+    }
+    h2 {
+      padding: 0 0 8.696% 0; /* 40/460 */
+    }
+    a.btn {
+      margin: 6.522% 0 0 0; /* 30/460 */
+    }
+  }
+}
+
+/*s_services*/
+.b_nav-services {
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 0.816% 1.596%; /*15/940*/
+    width: 136px;
+    border: 1px solid @gray;
+    &:hover {
+      border: 1px solid @maroon;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+.icon-container-services {
+  display: block;
+  line-height: 90px;
+  img {
+    vertical-align: bottom;
+  }
+}
+.icon-title-services{
+  display: block;
+  padding: 10px 0 6px 0;
+}
+
+/*s_articles*/
+.b_nav-articles {
+  text-align: center;
+  display: table-row;
+}
+.article-list {
+  position: relative;
+  width: 33.333%;
+  max-width: 460px;
+  text-align: left;
+  vertical-align: top;
+  display: table-cell;
+  padding: 0 1.064% 48px; /* 10/940 */
+  @media @tablet_small{
+    width: 50%;
+    &:last-child {
+      display: none;
+    }
+  }
+  @media @mobile{
+    display: inline-block;
+    width: 100%;
+    padding: 15% 0 48px 0;
+    &:last-child {
+      display: inline-block;
+    }
+  }
+  .img-container{
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
+    }
+  }
+  h3 {
+    padding: 11.946% 0 0; /* 35/293 */
+    @media @mobile{
+      padding: 7.609% 0 0; /* 35/460 */
+    }
+  }
+  p{
+    height: @font-size*@line-height*@lines-to-show;
+    margin: 10.239% 0; /* 30/293 */
+    @media @mobile{
+      margin: 6.522% 0; /* 30/460 */
+    }
+  }
+}
+.articles_btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*s_clients*/
+.b_nav-clients {
+  margin: 0 auto;
+}
+.clients-list {
+    display: block;
+  a{
+    display: inline-block;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+/*section s_main-info*/
+.s_main-info .image-inner {
+  width: 32.022%;
+  /*301/940*/
+}
+.s_main-info .description-inner {
+  width: 48.937%;
+  /* 460/940 */
+  padding: 0 0 0 10.639%;
+  /* 100/940 */
+}
+@media screen and (max-width: 960px) {
+  .s_main-info .description-inner {
+    width: 60%;
+    padding: 0 0 0 7%;
+  }
+}
+.s_main-info .description-inner h2 {
+  padding: 0 0 8.696% 0;
+  /* 40/460 */
+}
+.s_main-info .description-inner a.btn {
+  margin: 6.522% 0 0 0;
+  /* 30/460 */
+}
+/*s_services*/
+.b_nav-services {
+  text-align: center;
+}
+.b_nav-services li {
+  display: inline-block;
+  margin: 0 0.816% 1.596%;
+  /*15/940*/
+  width: 136px;
+  border: 1px solid #f0f0f0;
+}
+.b_nav-services li:hover {
+  border: 1px solid #903349;
+}
+.b_nav-services li a {
+  display: block;
+  text-decoration: none;
+}
+.icon-container-services {
+  display: block;
+  line-height: 90px;
+}
+.icon-container-services img {
+  vertical-align: bottom;
+}
+.icon-title-services {
+  display: block;
+  padding: 10px 0 6px 0;
+}
+/*s_articles*/
+.b_nav-articles {
+  text-align: center;
+  display: table-row;
+}
+.article-list {
+  position: relative;
+  width: 33.333%;
+  max-width: 460px;
+  text-align: left;
+  vertical-align: top;
+  display: table-cell;
+  padding: 0 1.064% 48px;
+  /* 10/940 */
+}
+@media screen and (max-width: 800px) {
+  .article-list {
+    width: 50%;
+  }
+  .article-list:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .article-list {
+    display: inline-block;
+    width: 100%;
+    padding: 15% 0 48px 0;
+  }
+  .article-list:last-child {
+    display: inline-block;
+  }
+}
+.article-list .img-container {
+  width: 100%;
+}
+.article-list .img-container img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.article-list h3 {
+  padding: 11.946% 0 0;
+  /* 35/293 */
+}
+@media screen and (max-width: 600px) {
+  .article-list h3 {
+    padding: 7.609% 0 0;
+    /* 35/460 */
+  }
+}
+.article-list p {
+  height: 144px;
+  margin: 10.239% 0;
+  /* 30/293 */
+}
+@media screen and (max-width: 600px) {
+  .article-list p {
+    margin: 6.522% 0;
+    /* 30/460 */
+  }
+}
+.articles_btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*s_clients*/
+.b_nav-clients {
+  margin: 0 auto;
+}
+.clients-list {
+  display: block;
+}
+.clients-list a {
+  display: inline-block;
+}
+.clients-list a img {
+  width: 100%;
+  height: auto;
+}
