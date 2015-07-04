@@ -10,12 +10,14 @@ $(document).ready(function(){
             cssEase: 'linear'
         }
     );
+
     /**scrolling**/
     $('.scroll-to-contacts').click(function(){
         var elementClick=$('.s_footer').offset().top;
         $('html,body').animate({scrollTop: elementClick},1500);
         return false;
     });
+
     /** b_nav-clients **/
     $('.b_nav-clients').slick({
         infinite: true,
@@ -32,6 +34,7 @@ $(document).ready(function(){
                 }
             }]
     });
+
     /** b_nav-clients-mobile **/
     $('.b_nav-clients-mobile').slick({
         infinite: true,

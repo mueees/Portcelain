@@ -2,7 +2,8 @@
 .b_main-slider.slick-slider {
   margin-bottom: 0;
 }
-/*correct css carousel b_nav-clients*/
+/*  correct css carousel b_nav-clients
+    correct css carousel b_nav-clients-mobile*/
 .b_nav-clients.slick-slider {
   margin: 0;
 }
