@@ -2,7 +2,7 @@
 @import "colours.less";
 @import "breakpoints";
 @import "height ";
-h2{
+h1{
   color: @maroon;
   font-size: 48px;
   line-height: 1;
@@ -14,6 +14,20 @@ h2{
     font-size: 36px;
     line-height: 1.333;
 }
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.333;
+  color: @black;
+  text-align: left;
+  @media @tablet{
+    font-size: 35px;
+  }
+  @media @mobile{
+    font-size: 33px;
+  }
 }
 h3{
   font-family: 'Open Sans', sans-serif;
@@ -139,15 +153,18 @@ h3{
 }
 
 /*s_main-info*/
-.description-inner {
-  h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    @media @mobile{
-      font-weight: 600;
+.s_main-info{
+  .description-inner {
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      @media @mobile{
+        font-weight: 600;
+      }
     }
   }
 }
+
 
 /*s_services*/
 .icon-title-services{
@@ -205,3 +222,4 @@ h3{
     line-height: 1.08;
   }
 }
+

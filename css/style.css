@@ -15,13 +15,38 @@
     padding: 0 0 0 7%;
   }
 }
-.s_main-info .description-inner h2 {
+.s_main-info .description-inner h1 {
   padding: 0 0 8.696% 0;
   /* 40/460 */
 }
 .s_main-info .description-inner a.btn {
   margin: 6.522% 0 0 0;
   /* 30/460 */
+}
+/*SERVICES*/
+/*s_page-content*/
+.s_page-content .image-inner {
+  width: 23.405%;
+  /*220/940*/
+}
+.s_page-content .description-inner {
+  width: 65.956%;
+  /* 620/940 */
+  padding: 0 0 0 10.639%;
+  /* 100/940 */
+}
+@media screen and (max-width: 960px) {
+  .s_page-content .description-inner {
+    padding: 0 0 0 7%;
+  }
+}
+.s_page-content .description-inner h2 {
+  padding: 0 0 4.84% 0;
+  /* 30/620 */
+}
+.s_page-content .description-inner a.btn {
+  margin: 4.84% 0 0 0;
+  /* 30/620 */
 }
 /*s_services*/
 .b_nav-services {
