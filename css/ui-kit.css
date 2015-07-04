@@ -1194,7 +1194,7 @@ h3 {
   }
 }
 .b_nav-clients-mobile.slick-slider {
-  margin: 0;
+  margin: 0 30px;
 }
 .b_nav-clients .slick-prev:before,
 .b_nav-clients .slick-next:before,

@@ -133,12 +133,9 @@
     display: block;
   }
 }
-.clients-list {
-  padding: 25px 8px;
-  display: block;
-}
 .clients-list a {
   display: inline-block;
+  padding: 23px 8px;
 }
 .clients-list a img {
   width: 100%;
