@@ -110,9 +110,18 @@
 
 /*s_clients*/
 .b_nav-clients {
-  margin: 0 auto;
+  @media @mobile {
+    display: none;
+  }
+}
+.b_nav-clients-mobile {
+  display: none;
+  @media @mobile {
+    display: block;
+  }
 }
 .clients-list {
+  padding: 25px 8px;
     display: block;
   a{
     display: inline-block;

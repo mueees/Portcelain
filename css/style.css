@@ -120,10 +120,21 @@
   width: 100%;
 }
 /*s_clients*/
-.b_nav-clients {
-  margin: 0 auto;
+@media screen and (max-width: 600px) {
+  .b_nav-clients {
+    display: none;
+  }
+}
+.b_nav-clients-mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .b_nav-clients-mobile {
+    display: block;
+  }
 }
 .clients-list {
+  padding: 25px 8px;
   display: block;
 }
 .clients-list a {
