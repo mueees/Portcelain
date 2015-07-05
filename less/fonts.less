@@ -1,11 +1,11 @@
 /*style for all*/
 @import "colours.less";
 @import "breakpoints";
-@import "height ";
 h1{
-  color: @maroon;
+  font-family: 'Open Sans', sans-serif;
   font-size: 48px;
   line-height: 1;
+  color: @maroon;
   text-align: left;
   @media @tablet{
     font-size: 41px;
@@ -36,13 +36,25 @@ h3{
   color: @maroon;
   line-height: 1.25;
 }
+.breadcrumbs {
+  a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: @black;
+    line-height: 1.44;
+  }
+}
 .description-inner{
   p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.44;
+    font-size: @font-size;
+    line-height: @line-height;
+    @font-size: 18px;
+    @line-height: 1.44;
     color:  @black;
+    overflow: hidden;
   }
 }
 .b_section-title{
@@ -156,7 +168,6 @@ h3{
 .s_main-info{
   .description-inner {
     h1 {
-      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       @media @mobile{
         font-weight: 600;
@@ -164,7 +175,6 @@ h3{
     }
   }
 }
-
 
 /*s_services*/
 .icon-title-services{
@@ -178,16 +188,17 @@ h3{
 }
 
 /*s_articles*/
-.article-list{
-  p{
-    overflow: hidden;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: @black;
-    font-size: @font-size;
-    line-height: @line-height;
+.b_nav-articles {
+  .description-inner {
+    p {
+      @lines-to-show: 6;
+      @font-size: 18px;
+      @line-height: 1.44;
+      height: @font-size*@line-height*@lines-to-show;
+    }
   }
 }
+
 /*s_footer*/
 .phone-logo-inner{
   font-family: 'Open Sans', sans-serif;
@@ -223,3 +234,34 @@ h3{
   }
 }
 
+/*SERVICES*/
+/*s_page-content*/
+.s_page-content {
+  h1 {
+    font-weight: 600;
+  }
+}
+.s_page-content {
+  .description-inner {
+    p {
+      @lines-to-show: 4;
+      @font-size: 18px;
+      @line-height: 1.44;
+      height: @font-size*@line-height*@lines-to-show;
+    }
+  }
+}
+/*s_slogan*/
+.s_slogan{
+  p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.333;
+    color: @white;
+    span{
+      font-weight: 700;
+    }
+  }
+}

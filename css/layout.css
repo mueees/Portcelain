@@ -52,6 +52,16 @@
   /* 8/940 */
   text-align: center;
 }
+.breadcrumbs li {
+  display: inline-block;
+  list-style: none;
+}
+.breadcrumbs li:before {
+  content: '/';
+}
+.breadcrumbs li:first-child:before {
+  content: none;
+}
 /*s-head*/
 .b_main-slider {
   overflow: hidden;

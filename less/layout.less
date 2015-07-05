@@ -49,6 +49,20 @@
   padding: 0.852% 0;/* 8/940 */
   text-align: center
 }
+.breadcrumbs {
+  li{
+    display: inline-block;
+    list-style: none;
+    &:before{
+      content: '/';
+    }
+    &:first-child{
+      &:before{
+        content: none;
+      }
+    }
+  }
+}
 
 /*s-head*/
 .b_main-slider{
@@ -410,4 +424,5 @@ a.footer-info-inner&:hover{
     }
   }
 }
+
 
