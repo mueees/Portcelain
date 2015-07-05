@@ -139,15 +139,21 @@
   .breadcrumbs{
     position: absolute;
     top: 30px;
+    @media @tablet_small {
+      top: 15px;
+    }
+    @media @mobile {
+      top: 5px;
+    }
   }
   h1{
     display: inline-block;
   }
   .l_item{
-    padding: 7.448% 0; /* 70/940 */
+    padding: 7.448% 0; /* 70/960 */
     overflow: hidden;
     &:last-child{
-      padding: 7.448% 0 0 0;
+      padding: 7.448% 0 1px 0;
     }
   }
   .image-inner {
@@ -158,10 +164,11 @@
     padding: 0 0 0 10.639%; /* 100/940 */
     @media @tablet{
       padding: 0 0 0 7%;
+      width: 69.595%;
     }
     @media @mobile {
-      padding: 0;
       width: 100%;
+      padding: 0;
     }
     h2 {
       padding: 0 0 4.84% 0; /* 30/620 */
@@ -173,10 +180,13 @@
 }
 .back{
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 4.788%; /* 45/940 */
   img{
     width: 100%;
     height: auto;
+  }
+  @media @mobile {
+    display: none;
   }
 }
 hr{
@@ -186,9 +196,15 @@ hr{
 
 /*s_slogan*/
 .s_slogan{
-  p{
+  p {
     margin: 0 auto;
     width: 77.66%;
+    @media @tablet{
+      width: 90%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
   }
 }
 

@@ -27,12 +27,12 @@ h2 {
 }
 @media screen and (max-width: 960px) {
   h2 {
-    font-size: 35px;
+    font-size: 33px;
   }
 }
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 33px;
+    font-size: 30px;
   }
 }
 h3 {
@@ -250,6 +250,16 @@ h3 {
   line-height: 1.333;
   color: #ffffff;
 }
+@media screen and (max-width: 960px) {
+  .s_slogan p {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s_slogan p {
+    font-size: 30px;
+  }
+}
 .s_slogan p span {
   font-weight: 700;
 }
@@ -406,16 +416,26 @@ h3 {
   position: absolute;
   top: 30px;
 }
+@media screen and (max-width: 800px) {
+  .s_page-content .breadcrumbs {
+    top: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s_page-content .breadcrumbs {
+    top: 5px;
+  }
+}
 .s_page-content h1 {
   display: inline-block;
 }
 .s_page-content .l_item {
   padding: 7.448% 0;
-  /* 70/940 */
+  /* 70/960 */
   overflow: hidden;
 }
 .s_page-content .l_item:last-child {
-  padding: 7.448% 0 0 0;
+  padding: 7.448% 0 1px 0;
 }
 .s_page-content .image-inner {
   width: 23.405%;
@@ -430,12 +450,13 @@ h3 {
 @media screen and (max-width: 960px) {
   .s_page-content .description-inner {
     padding: 0 0 0 7%;
+    width: 69.595%;
   }
 }
 @media screen and (max-width: 600px) {
   .s_page-content .description-inner {
-    padding: 0;
     width: 100%;
+    padding: 0;
   }
 }
 .s_page-content .description-inner h2 {
@@ -448,11 +469,17 @@ h3 {
 }
 .back {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 4.788%;
+  /* 45/940 */
 }
 .back img {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 600px) {
+  .back {
+    display: none;
+  }
 }
 hr {
   margin: 0;
@@ -462,4 +489,14 @@ hr {
 .s_slogan p {
   margin: 0 auto;
   width: 77.66%;
+}
+@media screen and (max-width: 960px) {
+  .s_slogan p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s_slogan p {
+    width: 100%;
+  }
 }

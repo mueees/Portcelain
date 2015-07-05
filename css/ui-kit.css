@@ -694,12 +694,12 @@ h2 {
 }
 @media screen and (max-width: 960px) {
   h2 {
-    font-size: 35px;
+    font-size: 33px;
   }
 }
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 33px;
+    font-size: 30px;
   }
 }
 h3 {
@@ -916,6 +916,16 @@ h3 {
   font-weight: 400;
   line-height: 1.333;
   color: #ffffff;
+}
+@media screen and (max-width: 960px) {
+  .s_slogan p {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s_slogan p {
+    font-size: 30px;
+  }
 }
 .s_slogan p span {
   font-weight: 700;
