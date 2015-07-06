@@ -12,6 +12,15 @@
   cursor: pointer;
   outline: none;
 }
+.btn:hover {
+  background: #903349;
+  color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 12px 30px;
+  }
+}
 a.btn {
   text-decoration: none;
   display: inline-block;

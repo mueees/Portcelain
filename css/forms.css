@@ -20,12 +20,13 @@
 .btn-search {
   position: relative;
   right: 10px;
-  cursor: pointer;
   padding: 0;
   border: none;
   outline: none;
   background-color: transparent;
   vertical-align: bottom;
+  cursor: pointer;
+  z-index: 2;
 }
 @media screen and (max-width: 800px) {
   .btn-search {
@@ -291,7 +292,7 @@
   display: inline-block;
 }
 .languages-drop-down li a {
-  padding: 0 8px;
+  padding: 0 7px;
   border: 1px solid #ffffff;
 }
 .languages-drop-down li a:hover {

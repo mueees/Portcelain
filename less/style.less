@@ -30,18 +30,18 @@
 /*s_services*/
 .b_nav-services {
   text-align: center;
-  li {
-    display: inline-block;
-    margin: 0 0.816% 1.596%; /*15/940*/
-    width: 136px;
-    border: 1px solid @gray;
-    &:hover {
-      border: 1px solid @maroon;
-    }
-    a {
-      display: block;
-      text-decoration: none;
-    }
+}
+.service-list{
+  display: inline-block;
+  margin: 0 0.816% 1.596%; /*15/940*/
+  width: 136px;
+  border: 1px solid @gray;
+  &:hover {
+    border: 1px solid @maroon;
+  }
+  a {
+    display: block;
+    text-decoration: none;
   }
 }
 .icon-container-services {
@@ -81,14 +81,20 @@
       &:last-child {
         display: inline-block;
       }
+      &:first-child{
+        padding: 0 0 48px 0;
+      }
     }
     .img-container {
       width: 100%;
-      img {
-        width: 100%;
-        height: auto;
-        vertical-align: bottom;
-      }
+    }
+    a{
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
     }
     h3 {
       padding: 11.946% 0 0; /* 35/293 */
@@ -181,6 +187,10 @@
 .back{
   display: inline-block;
   margin-right: 4.788%; /* 45/940 */
+  .transition(all 0.1s ease-in-out);
+  &:hover{
+    .scale(1.1);
+  }
   img{
     width: 100%;
     height: auto;

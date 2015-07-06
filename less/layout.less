@@ -87,7 +87,7 @@
   width: 340px;
   height: 291px;
   background: rgba(255, 255, 255, 0.7);
-  padding: 37px 20px 25px 0;
+  padding: 35px 20px 25px 0;
   text-align: right;
   .box-sizing(border-box);
   @media @tablet_small {
@@ -101,7 +101,10 @@
   }
 }
 .slide-title{
-  padding: 0 0 37px 0;
+  margin: 0 0 35px 0;
+  height: 148px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .b_header {
   position: absolute;
@@ -129,6 +132,9 @@
   @media @mobile {
     width: 41.667%;/* 230/552 */
     min-width: 170px;
+  }
+  a{
+    display: block;
   }
   img{
     width: 100%;
@@ -179,9 +185,9 @@
       padding: 0 0 20px 30px;
     }
     @media @tablet_small {
-      padding: 15px 0;
+      padding: 15px 1%;
       text-align: center;
-      width: 50%;
+      width: 48%;
       border-bottom: 3px solid @white;
       &:nth-child(3),
       &:nth-child(4),
@@ -200,12 +206,12 @@
          display: block;
        }
     }
-    a{
+    a {
       @media @tablet_small {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 90%;
+        width: 95%;
         display: block;
       }
     }
@@ -304,69 +310,84 @@
     padding: 0 0 360px 0;
   }
   li {
-    width: 30%;
+    width: 31.9%;
+    max-width: 300px;
     text-align: left;
     vertical-align: top;
     display: inline-block;
-    padding: 0 1.064% 0; /* 10/940 */
+    padding: 0 0 0 2.128%; /* 20/940 */
+    margin-left: -4px;
+    &:first-child{
+      padding: 0;
+      margin-left: 0;
+    }
     @media @tablet_small{
-      width: 47.5%;
-      &:first-child {
-        display: none;
+      width: 48%;
+      &:last-child{
+        position: absolute;
+        top: 430px;
+        left: 49.5%;
       }
     }
     @media @mobile{
       width: 300px;
       padding: 0 0 8.153% 0;/* 45/552 */
-      &:first-child {
-        display: inline-block;
-      }
       &:last-child {
+        position: static;
         padding: 0;
+      }
+      &:first-child {
+        padding: 0 0 8.153% 0;/* 45/552 */
       }
     }
     h3 {
-      padding: 12.412% 0 0; /* 35/282 */
-      @media @mobile{
-        padding: 7.609% 0 0; /* 35/460 */
-      }
+      padding: 11.67% 0 0; /* 35/300 */
     }
     a {
       display: block;
-      padding: 0 0 12.412% 0; /* 35/282 */
-      &:last-child{
+      padding: 0 0 11.675% 0; /* 35/300 */
+      &:last-child {
         padding: 0;
       }
       @media @tablet_small {
         padding: 0 0 15% 0; /* 45/300 */
       }
-      img {
-        width: 75.744%;
-        height: 100%;
-        vertical-align: bottom;
-        @media @mobile {
-          width: 100%;
-        }
+    }
+    img {
+      width: 75.744%;
+      height: auto;
+      vertical-align: bottom;
+      @media @mobile {
+        width: 80%;
       }
     }
   }
 }
 .b_nav-footer {
+  @media @tablet_small {
+    height: 845px;
+  }
+  @media @mobile {
+    height: auto;
+  }
   .some-logo {
-    padding: 15.958% 0 0 0; /* 45/282 */
-    @media @mobile {
+    padding: 15.01% 0 0 0; /* 45/300 */
+    @media @tablet_small {
       position: absolute;
-      bottom: 0;
+      top: 430px;
+      padding: 0;
+      max-width: 300px;
+      width: 48%;
     }
-    img {
-      @media @mobile {
-        width: 300px;
-      }
+    @media @mobile {
+      top: inherit;
+      bottom: 0;
+      width: 80%;
     }
   }
 }
 .phone-logo-inner{
-  padding: 0 0 6.667% 0; /* 20/300 */
+  padding: 0 0 6.67% 0; /* 20/300 */
 }
 .map-container{
   iframe{
@@ -376,26 +397,42 @@
   }
 }
 .content-adress-photo{
-  padding: 0 0 12.412% 0; /* 35/282 */
+  padding: 0 0 11.675% 0; /* 35/300 */
 }
 a.footer-info-inner&:hover{
   text-decoration: none;
 }
-.b_social-icons{
+.b_social-icons {
+  overflow: hidden;
+  @media @tablet_small {
+    position: relative;
+    top: 0;
+    left: 51%;
+    display: inline-block;
+  }
+  @media @mobile {
+    position: static;
+    text-align: center;
+    display: block;
+  }
+}
+.social-icons-container{
   float: right;
   padding-top: 3.724%; /* 35/940 */
-  @media @mobile {
+  @media @tablet_small {
     float:none;
-    text-align: center;
-    padding-top: 17.211%; /* 95/552 */
+    text-align: left;
+    padding-top: 31.667%; /* 95/300 */
+    width: 300px;
+    display: inline-block;
   }
 }
 .title-social{
   display: inline-block;
   vertical-align: middle;
-  @media @mobile {
+  @media @tablet_small {
     display: block;
-    padding-bottom: 4.53%; /* 25/552 */
+    padding-bottom: 8.334%; /* 25/300 */
   }
 }
 .b_nav-social{
@@ -405,7 +442,7 @@ a.footer-info-inner&:hover{
     float: left;
     padding-left: 20px;
     list-style: none;
-    @media @mobile {
+    @media @tablet_small {
       &:first-child{
         padding-left: 0;
       }

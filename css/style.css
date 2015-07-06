@@ -298,17 +298,17 @@ h3 {
 .b_nav-services {
   text-align: center;
 }
-.b_nav-services li {
+.service-list {
   display: inline-block;
   margin: 0 0.816% 1.596%;
   /*15/940*/
   width: 136px;
   border: 1px solid #f0f0f0;
 }
-.b_nav-services li:hover {
+.service-list:hover {
   border: 1px solid #903349;
 }
-.b_nav-services li a {
+.service-list a {
   display: block;
   text-decoration: none;
 }
@@ -355,11 +355,17 @@ h3 {
   .b_nav-articles .description-inner:last-child {
     display: inline-block;
   }
+  .b_nav-articles .description-inner:first-child {
+    padding: 0 0 48px 0;
+  }
 }
 .b_nav-articles .description-inner .img-container {
   width: 100%;
 }
-.b_nav-articles .description-inner .img-container img {
+.b_nav-articles .description-inner a {
+  display: block;
+}
+.b_nav-articles .description-inner img {
   width: 100%;
   height: auto;
   vertical-align: bottom;
@@ -471,6 +477,16 @@ h3 {
   display: inline-block;
   margin-right: 4.788%;
   /* 45/940 */
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+.back:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .back img {
   width: 100%;
