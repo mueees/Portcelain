@@ -61,6 +61,21 @@
         content: none;
       }
     }
+    a{
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.image-inner{
+  a{
+    display: block;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
   }
 }
 
@@ -285,11 +300,6 @@
     float: left;
     @media @mobile{
       display: none;
-    }
-    img{
-      width: 100%;
-      height: auto;
-      vertical-align: bottom;
     }
   }
   .description-inner {

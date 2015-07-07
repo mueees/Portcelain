@@ -188,14 +188,12 @@ h3{
 }
 
 /*s_articles*/
-.b_nav-articles {
-  .description-inner {
-    p {
-      @lines-to-show: 6;
-      @font-size: 18px;
-      @line-height: 1.44;
-      height: @font-size*@line-height*@lines-to-show;
-    }
+.article-preview {
+  p {
+    @lines-to-show: 6;
+    @font-size: 18px;
+    @line-height: 1.44;
+    height: @font-size*@line-height*@lines-to-show;
   }
 }
 
@@ -251,6 +249,23 @@ h3{
     }
   }
 }
+.s_page-content{
+  .description-full{
+    p{
+      height: auto;
+      padding-bottom: 3.227%; /* 20/620 */
+      &:first-child{
+        font-size: 24px;
+        line-height: 1.33;
+        padding-bottom: 4.84%;/* 30/620 */
+      }
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
 /*s_slogan*/
 .s_slogan{
   p{
@@ -271,3 +286,11 @@ h3{
     }
   }
 }
+
+
+
+
+
+
+
+

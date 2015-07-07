@@ -190,7 +190,7 @@ h3 {
   text-align: center;
 }
 /*s_articles*/
-.b_nav-articles .description-inner p {
+.article-preview p {
   height: 155.52px;
 }
 /*s_footer*/
@@ -240,6 +240,20 @@ h3 {
 }
 .s_page-content .description-inner p {
   height: 103.68px;
+}
+.s_page-content .description-full p {
+  height: auto;
+  padding-bottom: 3.227%;
+  /* 20/620 */
+}
+.s_page-content .description-full p:first-child {
+  font-size: 24px;
+  line-height: 1.33;
+  padding-bottom: 4.84%;
+  /* 30/620 */
+}
+.s_page-content .description-full p:last-child {
+  padding-bottom: 0;
 }
 /*s_slogan*/
 .s_slogan p {

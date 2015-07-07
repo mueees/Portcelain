@@ -215,6 +215,17 @@ select {
 .breadcrumbs li:first-child:before {
   content: none;
 }
+.breadcrumbs li a:hover {
+  text-decoration: none;
+}
+.image-inner a {
+  display: block;
+}
+.image-inner img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
 /*s-head*/
 .b_main-slider {
   overflow: hidden;
@@ -477,11 +488,6 @@ select {
   .b_with-left-image .image-inner {
     display: none;
   }
-}
-.b_with-left-image .image-inner img {
-  width: 100%;
-  height: auto;
-  vertical-align: bottom;
 }
 .b_with-left-image .description-inner {
   float: left;
@@ -911,7 +917,7 @@ h3 {
   text-align: center;
 }
 /*s_articles*/
-.b_nav-articles .description-inner p {
+.article-preview p {
   height: 155.52px;
 }
 /*s_footer*/
@@ -962,6 +968,20 @@ h3 {
 .s_page-content .description-inner p {
   height: 103.68px;
 }
+.s_page-content .description-full p {
+  height: auto;
+  padding-bottom: 3.227%;
+  /* 20/620 */
+}
+.s_page-content .description-full p:first-child {
+  font-size: 24px;
+  line-height: 1.33;
+  padding-bottom: 4.84%;
+  /* 30/620 */
+}
+.s_page-content .description-full p:last-child {
+  padding-bottom: 0;
+}
 /*s_slogan*/
 .s_slogan p {
   text-align: center;
@@ -987,11 +1007,11 @@ h3 {
 /*search-container*/
 .search-container {
   float: right;
-  padding-left: 37px;
+  padding-left: 17px;
 }
 @media screen and (max-width: 960px) {
   .search-container {
-    padding-left: 30px;
+    padding-left: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1005,8 +1025,9 @@ h3 {
 }
 .btn-search {
   position: relative;
-  right: 10px;
-  padding: 0;
+  right: 2px;
+  top: 0;
+  padding: 0 10px;
   border: none;
   outline: none;
   background-color: transparent;
