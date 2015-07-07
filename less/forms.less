@@ -39,13 +39,13 @@
   background: url("../img/search_icon.png") no-repeat;
   width: 18px;
   height: 17px;
-  &:active.form_search{
+  /*Õ≈ Õ”∆ÕŒ   &:active.form_search{
     display: block;
   }
   &:hover.triangle-search
   &:active.triangle-search{
     display: block;
-  }
+  }*/
   @media @tablet_small {
     background: url("../img/search_icon_tablet.png") no-repeat;
     width: 31px;
@@ -53,6 +53,7 @@
   }
 }
 .form-search{
+  display: none;
   position: absolute;
   top: 40px;
   right: 0;
@@ -76,8 +77,8 @@
     @media @tablet_small {
       border: 2px solid @white;
       height: 53px;
-      padding: 10px;
-      width: 72.667%; /* 436/600 */
+      padding: 10px 5px 10px 50px;
+      width: 66.667%;
       background: transparent;
       color: @white;
     }
@@ -209,6 +210,15 @@
     right: 0;
   }
 }
+.menu-hamburger:checked ~ .overlay {
+   @media @tablet_small {
+     display: block;
+   }
+ }
+
+
+
+
 
 .languages{
   position: absolute;
