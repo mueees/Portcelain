@@ -254,14 +254,6 @@
     display: block;
   }
 }
-@media screen and (max-width: 800px) {
-  .b_nav-menu > li.active-link {
-    background: #ffffff;
-  }
-  .b_nav-menu > li.active-link > a {
-    color: #903349;
-  }
-}
 .sub-menu-l2 {
   display: none;
   position: absolute;
@@ -287,6 +279,7 @@
   padding: 13px 20px;
   border-bottom: 1px solid #cccccc;
   text-align: left;
+  cursor: pointer;
 }
 .sub-menu-l2 li :last-child {
   border-bottom: none;

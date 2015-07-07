@@ -141,7 +141,8 @@
       top: 15px;
     }
     @media @mobile {
-      top: 5px;
+      position: relative;
+      top: -15px;
     }
   }
   h1{
@@ -173,6 +174,19 @@
     }
     a.btn {
       margin: 4.84% 0 0 0; /* 30/620 */
+    }
+  }
+}
+.s_page-content{
+  .description-full{
+    p{
+      padding-bottom: 3.227%; /* 20/620 */
+      &:first-child{
+        padding-bottom: 4.84%;/* 30/620 */
+      }
+      &:last-child{
+        padding-bottom: 0;
+      }
     }
   }
 }

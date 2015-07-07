@@ -110,6 +110,18 @@ h3 {
     color: #ffffff;
   }
 }
+.b_nav-menu > li.active-link {
+  cursor: default;
+}
+.b_nav-menu > li.active-link > a {
+  color: #903349;
+  cursor: default;
+}
+@media screen and (max-width: 800px) {
+  .b_nav-menu > li.active-link {
+    background: #ffffff;
+  }
+}
 .sub-menu-l2 li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -243,17 +255,10 @@ h3 {
 }
 .s_page-content .description-full p {
   height: auto;
-  padding-bottom: 3.227%;
-  /* 20/620 */
 }
 .s_page-content .description-full p:first-child {
   font-size: 24px;
   line-height: 1.33;
-  padding-bottom: 4.84%;
-  /* 30/620 */
-}
-.s_page-content .description-full p:last-child {
-  padding-bottom: 0;
 }
 /*s_slogan*/
 .s_slogan p {
@@ -435,7 +440,8 @@ h3 {
 }
 @media screen and (max-width: 600px) {
   .s_page-content .breadcrumbs {
-    top: 5px;
+    position: relative;
+    top: -15px;
   }
 }
 .s_page-content h1 {
@@ -478,6 +484,17 @@ h3 {
 .s_page-content .description-inner a.btn {
   margin: 4.84% 0 0 0;
   /* 30/620 */
+}
+.s_page-content .description-full p {
+  padding-bottom: 3.227%;
+  /* 20/620 */
+}
+.s_page-content .description-full p:first-child {
+  padding-bottom: 4.84%;
+  /* 30/620 */
+}
+.s_page-content .description-full p:last-child {
+  padding-bottom: 0;
 }
 .back {
   display: inline-block;

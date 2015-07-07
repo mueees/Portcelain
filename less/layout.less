@@ -61,7 +61,7 @@
         content: none;
       }
     }
-    a{
+    a {
       &:hover{
         text-decoration: none;
       }
@@ -231,14 +231,6 @@
       }
     }
   }
-  >li.active-link{
-    @media @tablet_small {
-      background: @white;
-      >a{
-        color: @maroon;
-      }
-    }
-  }
 }
 .sub-menu-l2{
   display: none;
@@ -258,6 +250,7 @@
     padding: 13px 20px;
     border-bottom: 1px solid #cccccc;
     text-align: left;
+    cursor: pointer;
     :last-child{
       border-bottom:none;
     }
