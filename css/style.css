@@ -450,6 +450,9 @@ h3 {
 }
 /*SERVICES*/
 /*s_page-content*/
+.s_page-content.white {
+  background: #ffffff;
+}
 .s_page-content .breadcrumbs {
   position: absolute;
   top: 30px;
@@ -546,6 +549,9 @@ hr {
   border-top: 1px solid #000000;
 }
 /*s_slogan*/
+.s_slogan.maroon {
+  background: #903349;
+}
 .s_slogan p {
   margin: 0 auto;
   width: 77.66%;
