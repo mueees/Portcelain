@@ -85,7 +85,7 @@ body{
 }
 .slide-img {
   height: 660px;
-  @media @tablet_small {
+  @media @tablet {
     height: 700px;
   }
   img {
@@ -93,6 +93,9 @@ body{
     height: auto;
     vertical-align: bottom;
     min-width: 1600px;
+    @media @tablet {
+      height: 100%;
+    }
   }
 }
 .slide-description {
@@ -105,7 +108,7 @@ body{
   padding: 35px 20px 25px 0;
   text-align: right;
   .box-sizing(border-box);
-  @media @tablet_small {
+  @media @tablet{
     bottom: 80px;
     right: 0;
     left: 0;
@@ -126,7 +129,7 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  @media @tablet_small {
+  @media @tablet {
     background-color: @hex_gray;
   }
 }
@@ -141,7 +144,7 @@ body{
 .site-logo{
   width: 205px;
   float: left;
-  @media @tablet_small {
+  @media @tablet {
     width: 230px;
   }
   @media @mobile {
@@ -161,7 +164,7 @@ body{
   position: relative;
   top: 30px;
   float: right;
-  @media @tablet_small {
+  @media @tablet {
     width: 70%;
     background: @maroon;
     height: 286px;
@@ -178,7 +181,7 @@ body{
   nav {
     float: right;
     position: relative;
-    @media @tablet_small{
+    @media @tablet{
       float: none;
       top: 183px;
     }
@@ -200,9 +203,6 @@ body{
       display: block;
     }
     @media @tablet{
-      padding: 0 0 20px 30px;
-    }
-    @media @tablet_small {
       padding: 15px 1%;
       text-align: center;
       width: 48%;
@@ -225,7 +225,7 @@ body{
        }
     }
     a {
-      @media @tablet_small {
+      @media @tablet {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -243,9 +243,6 @@ body{
   max-width: 231px;
   .drop-shadow (0, 0, 10px, 0, 0.5);
   @media @tablet {
-    left: -60px;
-  }
-  @media @tablet_small {
     max-width: 100%;
   }
   li{
@@ -260,7 +257,7 @@ body{
     &:hover{
       background: @maroon;
     }
-    @media @tablet_small {
+    @media @tablet{
       border-bottom: none;
       background: @maroon;
       padding: 15px 20px;
@@ -272,20 +269,20 @@ body{
       white-space: pre-line;
     }
   }
-  @media @tablet_small {
+  @media @tablet {
     top: 66px;
     left: 0;
     right: 0;
   }
 }
 .sub-menu-l2.active{
-  @media @tablet_small {
+  @media @tablet{
     display: block;
   }
 }
 .mobile-item{
   display: none;
-  @media @tablet_small {
+  @media @tablet{
     display: block;
   }
 }

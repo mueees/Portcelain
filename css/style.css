@@ -84,7 +84,7 @@ h3 {
 .b_nav-menu > li:hover > span {
   color: #903349;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .b_nav-menu > li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -96,7 +96,7 @@ h3 {
   color: #000000;
   line-height: 1.2;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .b_nav-menu > li > a {
     color: #ffffff;
   }
@@ -105,7 +105,7 @@ h3 {
   color: #000000;
   line-height: 1.2;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .b_nav-menu > li > span {
     color: #ffffff;
   }
@@ -117,7 +117,7 @@ h3 {
   color: #903349;
   cursor: default;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .b_nav-menu > li.active-link {
     background: #ffffff;
   }
@@ -131,7 +131,7 @@ h3 {
 .sub-menu-l2 li:hover a {
   color: #ffffff;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .sub-menu-l2 li {
     font-size: 28px;
   }
@@ -147,7 +147,7 @@ h3 {
   color: #000000;
   line-height: 1.2;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .sub-menu-l2 li a {
     color: #ffffff;
   }
@@ -156,7 +156,7 @@ h3 {
   color: #000000;
   line-height: 1.2;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .sub-menu-l2 li span {
     color: #ffffff;
   }
@@ -173,7 +173,7 @@ h3 {
 .languages a:hover {
   color: #903349;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .languages a {
     font-size: 26px;
     line-height: 1.77;

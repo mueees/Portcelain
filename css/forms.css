@@ -45,7 +45,7 @@
     display: block;
   }*/
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .icon-search {
     background: url("../img/search_icon_tablet.png") no-repeat;
     width: 31px;
@@ -61,7 +61,7 @@
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .form-search {
     top: 0;
     left: 0;
@@ -82,7 +82,7 @@
   background: #ffffff;
   width: 230px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .form-search input {
     border: 2px solid #ffffff;
     height: 53px;
@@ -113,7 +113,7 @@
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .triangle:before {
     content: none;
   }
@@ -121,11 +121,6 @@
 .triangle-nav {
   top: -10px;
   left: 7px;
-}
-@media screen and (max-width: 960px) {
-  .triangle-nav {
-    left: 20px;
-  }
 }
 .triangle-search {
   top: -50px;
@@ -147,7 +142,7 @@
   display: none;
   z-index: 4;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .icon-hamburger {
     display: block;
   }
@@ -238,12 +233,12 @@
   -o-transform: rotate(-45deg);
 }
 /*������ �� ��������!!!!!!!!!!*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .menu-hamburger:checked ~ .header-navigation {
     right: 0;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .menu-hamburger:checked ~ .overlay {
     display: block;
   }
@@ -253,7 +248,7 @@
   top: 0;
   right: 1.042%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .languages {
     top: 29%;
     right: 21.74%;
@@ -263,7 +258,7 @@
 .languages > a {
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .languages > a {
     display: block;
   }
@@ -281,7 +276,7 @@
   text-align: center;
   background: #ffffff;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .languages-drop-down {
     top: 46px;
     right: 0;
@@ -300,7 +295,7 @@
 .languages-drop-down li a:hover {
   border: 1px solid #903349;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .languages-drop-down li a {
     padding: 0;
     border: none;
@@ -311,4 +306,9 @@
 }
 .languages-drop-down li a.select {
   border: 1px solid #903349;
+}
+@media screen and (max-width: 960px) {
+  .languages-drop-down li a.select {
+    border: none;
+  }
 }

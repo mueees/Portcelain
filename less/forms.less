@@ -43,7 +43,7 @@
   &:active.triangle-search{
     display: block;
   }*/
-  @media @tablet_small {
+  @media @tablet {
     background: url("../img/search_icon_tablet.png") no-repeat;
     width: 31px;
     height: 37px;
@@ -55,7 +55,7 @@
   top: 40px;
   right: 0;
   .drop-shadow (0, 0, 10px, 0, 0.5);
-  @media @tablet_small {
+  @media @tablet {
     top: 0;
     left: 0;
     margin: auto;
@@ -71,7 +71,7 @@
     color: #000000;
     background: @white;
     width: 230px;
-    @media @tablet_small {
+    @media @tablet{
       border: 2px solid @white;
       height: 53px;
       padding: 10px 5px 10px 50px;
@@ -99,16 +99,13 @@
   background: @white;
   transform: rotate(45deg);
   .drop-shadow (0, 0, 10px, 0, 0.5);
-  @media @tablet_small {
+  @media @tablet{
     content: none;
   }
 }
 .triangle-nav{
   top: -10px;
   left: 7px;
-  @media @tablet {
-    left: 20px;
-  }
 }
 .triangle-search{
   top: -50px;
@@ -128,7 +125,7 @@
   cursor: pointer;
   display: none;
   z-index: 4;
-  @media @tablet_small {
+  @media @tablet {
     display: block;
   }
 }
@@ -203,12 +200,12 @@
 
 /*ÏÎ×ÅÌÓ ÍÅ ÐÀÁÎÒÀÅÒ!!!!!!!!!!*/
 .menu-hamburger:checked ~ .header-navigation {
-  @media @tablet_small {
+  @media @tablet {
     right: 0;
   }
 }
 .menu-hamburger:checked ~ .overlay {
-   @media @tablet_small {
+   @media @tablet {
      display: block;
    }
  }
@@ -218,13 +215,13 @@
   position: absolute;
   top: 0;
   right: 1.042%;
-  @media @tablet_small {
+  @media @tablet {
     top: 29%;
     right: 21.74%; /* 120/552 */
   }
   >a {
     display: none;
-    @media @tablet_small {
+    @media @tablet {
       display: block;
     }
   }
@@ -241,7 +238,7 @@
   width: 116px;
   text-align: center;
   background: @white;
-  @media @tablet_small {
+  @media @tablet {
     top: 46px;
     right: 0;
     padding: 0;
@@ -256,7 +253,7 @@
       &:hover{
         border: 1px solid @maroon;
       }
-      @media @tablet_small {
+      @media @tablet {
         padding: 0;
         border: none;
         &:hover {
@@ -266,6 +263,9 @@
     }
     a.select{
       border: 1px solid @maroon;
+      @media @tablet {
+        border: none;
+      }
     }
   }
 }
