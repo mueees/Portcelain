@@ -17,38 +17,6 @@ body{
   opacity: 0.6;
   display: none;
 }
-
-/*
-.b_section-title {
-  &.gray {
-    background: @gray;
-    .b_section-title {
-      background: @gray;
-    }
-  }
-  &.maroon {
-    background: @maroon;
-    .b_section-title {
-      background: @maroon;
-    }
-  }
-}
-*/
-
-.gray{
-  background: @gray;
-}
-.white{
-  background: @white;
-}
-.maroon{
-  background: @maroon;
-  color: @white;
-}
-.white.b_section-title,
-.gray.b_section-title{
-  color: @black;
-}
 .l_content-wrapper {
   width: 960px;
   height: 100%;
@@ -338,6 +306,15 @@ body{
 }
 
 /*s_footer*/
+.s_footer {
+  &.white {
+    background: @white;
+    .b_section-title {
+      background: @white;
+      color: @black;
+    }
+  }
+}
 .b_nav-footer {
   text-align: center;
   position: relative;

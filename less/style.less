@@ -28,6 +28,15 @@
 }
 
 /*s_services*/
+.s_services {
+  &.gray {
+    background: @gray;
+    .b_section-title {
+      background: @gray;
+      color: @black;
+    }
+  }
+}
 .b_nav-services {
   text-align: center;
 }
@@ -57,6 +66,15 @@
 }
 
 /*s_articles*/
+.s_articles {
+  &.white {
+    background: @white;
+    .b_section-title {
+      background: @white;
+      color: @black;
+    }
+  }
+}
 .b_nav-recent-articles {
   text-align: center;
   display: table-row;
@@ -108,6 +126,15 @@
 }
 
 /*s_clients*/
+.s_clients {
+  &.maroon {
+    background: @maroon;
+    .b_section-title {
+      background: @maroon;
+      color: @white;
+    }
+  }
+}
 .b_nav-clients {
   @media @mobile {
     display: none;
