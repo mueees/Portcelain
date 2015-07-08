@@ -361,7 +361,10 @@ body {
 .b_nav-menu > li {
   float: left;
   cursor: pointer;
-  padding: 0 0 20px 37px;
+  padding: 0 18px 20px 18px;
+}
+.b_nav-menu > li:last-child {
+  padding: 0 0 20px 18px;
 }
 .b_nav-menu > li:hover .sub-menu-l2 {
   display: block;
@@ -411,7 +414,7 @@ body {
   display: none;
   position: absolute;
   top: 40px;
-  left: -55px;
+  left: -74px;
   max-width: 231px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
@@ -1012,14 +1015,9 @@ h3 {
 /*search-container*/
 .search-container {
   float: right;
-  padding-left: 17px;
+  padding-left: 26px;
 }
 @media screen and (max-width: 960px) {
-  .search-container {
-    padding-left: 10px;
-  }
-}
-@media screen and (max-width: 800px) {
   .search-container {
     position: relative;
     top: 110px;
@@ -1040,7 +1038,7 @@ h3 {
   cursor: pointer;
   z-index: 2;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .btn-search {
     right: 0;
     left: -33.334%;
@@ -1136,7 +1134,7 @@ h3 {
 }
 .triangle-nav {
   top: -10px;
-  left: 25px;
+  left: 7px;
 }
 @media screen and (max-width: 960px) {
   .triangle-nav {

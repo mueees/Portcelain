@@ -189,7 +189,10 @@ body{
   > li {
     float: left;
     cursor: pointer;
-    padding: 0 0 20px 37px;
+    padding: 0 18px 20px 18px;
+    &:last-child{
+      padding: 0 0 20px 18px;
+    }
     &:hover .sub-menu-l2 {
       display: block;
     }
@@ -236,7 +239,7 @@ body{
   display: none;
   position: absolute;
   top: 40px;
-  left: -55px;
+  left: -74px;
   max-width: 231px;
   .drop-shadow (0, 0, 10px, 0, 0.5);
   @media @tablet {
