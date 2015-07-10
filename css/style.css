@@ -2,6 +2,7 @@
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 48px;
+  font-weight: 600;
   line-height: 1;
   color: #903349;
   text-align: left;
@@ -203,7 +204,7 @@ h3 {
 }
 /*s_articles*/
 .article-preview p {
-  height: 155.52px;
+  max-height: 155.52px;
 }
 /*s_footer*/
 .phone-logo-inner {
@@ -247,9 +248,6 @@ h3 {
 }
 /*SERVICES*/
 /*s_page-content*/
-.s_page-content h1 {
-  font-weight: 600;
-}
 .s_page-content .description-inner p {
   height: 103.68px;
 }
@@ -281,6 +279,15 @@ h3 {
 }
 .s_slogan p span {
   font-weight: 700;
+}
+/*SELL-PAGE*/
+/*s_articles*/
+/*� ������ ��������� �������, ���������� ���� � �����, � �� ������ �����*/
+.description-inner.multiple-paragraphs div {
+  font-size: 18px;
+  line-height: 1.44;
+  max-height: 181.44px;
+  overflow: hidden;
 }
 /*section s_main-info*/
 .s_main-info .image-inner {
@@ -348,76 +355,6 @@ h3 {
 .icon-title-services {
   display: block;
   padding: 10px 0 6px 0;
-}
-/*s_articles*/
-.s_articles.white {
-  background: #ffffff;
-}
-.s_articles.white .b_section-title {
-  background: #ffffff;
-  color: #000000;
-}
-.b_nav-recent-articles {
-  text-align: center;
-  display: table-row;
-}
-.article-preview {
-  position: relative;
-  width: 33.333%;
-  max-width: 460px;
-  text-align: left;
-  vertical-align: top;
-  display: table-cell;
-  padding: 0 1.064% 48px;
-  /* 10/940 */
-}
-@media screen and (max-width: 800px) {
-  .article-preview {
-    width: 50%;
-  }
-  .article-preview:last-child {
-    display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .article-preview {
-    display: inline-block;
-    width: 100%;
-    padding: 15% 0 48px 0;
-  }
-  .article-preview:last-child {
-    display: inline-block;
-  }
-  .article-preview:first-child {
-    padding: 0 0 48px 0;
-  }
-}
-.article-preview .image-inner {
-  width: 100%;
-}
-.article-preview h3 {
-  padding: 11.946% 0 0;
-  /* 35/293 */
-}
-@media screen and (max-width: 600px) {
-  .article-preview h3 {
-    padding: 7.609% 0 0;
-    /* 35/460 */
-  }
-}
-.article-preview p {
-  margin: 10.239% 0;
-  /* 30/293 */
-}
-@media screen and (max-width: 600px) {
-  .article-preview p {
-    margin: 6.522% 0;
-    /* 30/460 */
-  }
-}
-.articles_btn {
-  position: absolute;
-  bottom: 0;
 }
 /*s_clients*/
 .s_clients.maroon {
@@ -547,22 +484,4 @@ h3 {
 hr {
   margin: 0;
   border-top: 1px solid #000000;
-}
-/*s_slogan*/
-.s_slogan.maroon {
-  background: #903349;
-}
-.s_slogan p {
-  margin: 0 auto;
-  width: 77.66%;
-}
-@media screen and (max-width: 960px) {
-  .s_slogan p {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .s_slogan p {
-    width: 100%;
-  }
 }

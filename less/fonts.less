@@ -4,6 +4,7 @@
 h1{
   font-family: 'Open Sans', sans-serif;
   font-size: 48px;
+  font-weight: 600;
   line-height: 1;
   color: @maroon;
   text-align: left;
@@ -203,7 +204,7 @@ h3{
     @lines-to-show: 6;
     @font-size: 18px;
     @line-height: 1.44;
-    height: @font-size*@line-height*@lines-to-show;
+    max-height: @font-size*@line-height*@lines-to-show;
   }
 }
 
@@ -244,11 +245,6 @@ h3{
 
 /*SERVICES*/
 /*s_page-content*/
-.s_page-content {
-  h1 {
-    font-weight: 600;
-  }
-}
 .s_page-content {
   .description-inner {
     p {
@@ -292,10 +288,20 @@ h3{
   }
 }
 
-
-
-
-
-
-
+/*SELL-PAGE*/
+/*s_articles*/
+/*в тексте несколько абзацев, обрезается блок в целом, а не каждый абзац*/
+.description-inner{
+  &.multiple-paragraphs{
+    div {
+      font-size: @font-size;
+      line-height: @line-height;
+      @lines-to-show: 7;
+      @font-size: 18px;
+      @line-height: 1.44;
+      max-height: @font-size*@line-height*@lines-to-show;
+      overflow: hidden;
+    }
+  }
+}
 
