@@ -80,6 +80,7 @@ body{
 }
 /*s-head*/
 .main-slider-slide{
+  overflow: hidden;
   position: relative;
   height: 660px;
   @media @tablet {
@@ -126,6 +127,10 @@ body{
   height: 148px;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  max-width: 320px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .b_header {
   position: absolute;
