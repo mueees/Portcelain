@@ -21,6 +21,14 @@
     padding: 12px 30px;
   }
 }
+.btn.with-bg {
+  background: #903349;
+  color: white;
+}
+.btn.with-bg:hover {
+  background: #ffffff;
+  color: #903349;
+}
 a.btn {
   text-decoration: none;
   display: inline-block;
