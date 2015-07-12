@@ -46,6 +46,8 @@ $(document).ready(function(){
     });
 
     /** popup form-search **/
+    if ($(window).width() > 960){
+
     function deselect(e) {
         $('.form-search').slideFadeToggle(function() {
             e.removeClass('selected');
@@ -71,5 +73,10 @@ $(document).ready(function(){
     $.fn.slideFadeToggle = function(easing, callback) {
         return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
     };
+
+}
+
+
+
 
 });

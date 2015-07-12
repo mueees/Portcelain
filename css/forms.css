@@ -65,6 +65,7 @@
 }
 @media screen and (max-width: 960px) {
   .form-search {
+    display: block;
     top: 0;
     left: 0;
     margin: auto;
@@ -92,6 +93,11 @@
     width: 66.667%;
     background: transparent;
     color: #ffffff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-search {
+    display: block;
   }
 }
 .triangle {

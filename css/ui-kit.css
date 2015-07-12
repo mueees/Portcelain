@@ -560,8 +560,8 @@ body {
   width: 100%;
 }
 .article-preview h3 {
-  padding: 11.946% 0 10.239%;
-  /* 35/293 30/293*/
+  padding: 11.667% 0 10%;
+  /* 35/300 30/300*/
 }
 @media screen and (max-width: 600px) {
   .article-preview h3 {
@@ -570,8 +570,8 @@ body {
   }
 }
 .article-preview p {
-  margin: 0 0 6.826% 0;
-  /* 20/293 */
+  margin: 0 0 6.6667% 0;
+  /* 20/300 */
 }
 @media screen and (max-width: 600px) {
   .article-preview p {
@@ -1552,6 +1552,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   .form-search {
+    display: block;
     top: 0;
     left: 0;
     margin: auto;
@@ -1579,6 +1580,11 @@ p {
     width: 66.667%;
     background: transparent;
     color: #ffffff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-search {
+    display: block;
   }
 }
 .triangle {
