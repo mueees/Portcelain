@@ -17,15 +17,17 @@
 .btn-search {
   position: relative;
   right: 2px;
-  top: 0;
-  padding: 0 10px;
+  top: -10px;
+  padding: 10px;
   border: none;
   outline: none;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.7);
   vertical-align: bottom;
   cursor: pointer;
   z-index: 2;
   @media @tablet {
+    background: transparent;
+    padding: 0;
     right: 0;
     left: -33.334%;/*200/600*/
     top: 20px;
@@ -52,7 +54,7 @@
 .form-search{
   display: none;
   position: absolute;
-  top: 40px;
+  top: 45px;
   right: 0;
   .drop-shadow (0, 0, 10px, 0, 0.5);
   @media @tablet {

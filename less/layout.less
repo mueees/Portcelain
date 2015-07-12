@@ -45,9 +45,13 @@ body{
 .b_section-title{
   position: absolute;
   top: -23px;
-  width: 160px; /* 160/960=16.667%*/
-  padding: 0.852% 0;/* 8/940 */
-  text-align: center
+  width: 140px;
+  padding: 0.852% 10px;/* 8/940 */
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
 }
 .breadcrumbs {
   li{
@@ -175,7 +179,7 @@ body{
   @media @tablet {
     width: 70%;
     background: @maroon;
-    height: 286px;
+    height: 290px;
     z-index: 3;
     position: absolute;
     top: 0;
@@ -333,9 +337,16 @@ body{
   text-align: left;
   vertical-align: top;
   display: table-cell;
-  padding: 0 1.064% 48px; /* 10/940 */
+  padding: 0 0.71% 48px; /* 40/3/940/2*/
+  &:first-child{
+    padding: 0 1.418% 48px 0;/* 40/3/940 */
+  }
+  &:last-child{
+    padding: 0 0 48px 1.418%;/* 40/3/940 */
+  }
   @media @tablet_small{
     width: 50%;
+    padding: 0 0 48px 1.418%;/* 40/3/940 */
     &:last-child {
       display: none;
     }
@@ -346,6 +357,7 @@ body{
     padding: 15% 0 48px 0;
     &:last-child {
       display: inline-block;
+      padding: 15% 0 48px 0;
     }
     &:first-child{
       padding: 0 0 48px 0;
@@ -386,7 +398,7 @@ body{
   text-align: center;
   position: relative;
   @media @mobile {
-    padding: 0 0 360px 0;
+    padding: 0 0 260px 0;
   }
   li {
     width: 31.9%;
@@ -501,7 +513,7 @@ a.footer-info-inner&:hover{
   @media @tablet_small {
     float:none;
     text-align: left;
-    padding-top: 31.667%; /* 95/300 */
+    padding-top: 8.153%; /* 45/552 */
     width: 300px;
     display: inline-block;
   }
