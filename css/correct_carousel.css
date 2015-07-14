@@ -6,7 +6,6 @@
 /*  correct css carousel b_nav-clients
     correct css carousel b_nav-clients-mobile*/
 .b_nav-clients.slick-slider {
-  overflow: hidden;
   margin: 0;
 }
 @media screen and (max-width: 960px) {
@@ -36,16 +35,16 @@
 .b_nav-clients .slick-prev,
 .b_nav-clients-mobile .slick-prev {
   top: 50%;
-  bottom: 50%;
-  margin: auto;
+  margin-top: -37px;
+  /*73/2*/
   left: -30px;
   background: url("../img/arrow_left.png") no-repeat;
 }
 .b_nav-clients .slick-next,
 .b_nav-clients-mobile .slick-next {
   top: 50%;
-  bottom: 50%;
-  margin: auto;
+  margin-top: -37px;
+  /*73/2*/
   right: -30px;
   background: url("../img/arrow_right.png") no-repeat;
 }

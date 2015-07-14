@@ -37,13 +37,12 @@ h3{
   color: @maroon;
   line-height: 1.25;
 }
-
 p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: @font-size;
   line-height: @line-height;
-  @font-size: 18px;
+  @font-size: 16px;
   @line-height: 1.44;
   color:  @black;
   overflow: hidden;
@@ -57,7 +56,6 @@ p{
     line-height: 1.44;
   }
 }
-
 .b_section-title{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
@@ -200,9 +198,14 @@ p{
 .article-preview {
   p {
     @lines-to-show: 6;
-    @font-size: 18px;
+    @font-size: 16px;
     @line-height: 1.44;
     max-height: @font-size*@line-height*@lines-to-show;
+  }
+}
+.medical-sleep{
+  h2{
+    color: @maroon;
   }
 }
 
@@ -247,19 +250,18 @@ p{
   }
 }
 
-
 /*SERVICES*/
 /*s_page-content*/
 .s_page-content {
   p {
     @lines-to-show: 4;
-    @font-size: 18px;
+    @font-size: 16px;
     @line-height: 1.44;
-    height: @font-size*@line-height*@lines-to-show;
+    max-height: @font-size*@line-height*@lines-to-show;
   }
 }
 .s_page-content{
-  .description-full{
+  .description-detailed{
     p{
       height: auto;
       &:first-child{
@@ -289,54 +291,7 @@ p{
     }
   }
 }
-
 /*SELL-PAGE*/
-/*s_articles*/
-/*в тексте несколько абзацев, обрезается блок в целом, а не каждый абзац*/
-.description-inner{
-  &.multiple-paragraphs{
-    div {
-      font-size: @font-size;
-      line-height: @line-height;
-      @lines-to-show: 7;
-      @font-size: 18px;
-      @line-height: 1.44;
-      max-height: @font-size*@line-height*@lines-to-show;
-      overflow: hidden;
-    }
-  }
-}
-
-/* s_four-column */
-.s_four-column{
-  &.white{
-    background: @white;
-  }
-  h2{
-    color: @maroon;
-    text-align: center;
-  }
-  p{
-    text-align: center;
-  }
-  h3{
-    color: @black;
-  }
-}
-
-/* s_four-column
-  without-img*/
-.s_four-column {
-  &.without-img {
-    h3 {
-      color: @maroon;
-    }
-    p {
-      text-align: left;
-    }
-  }
-}
-
 /*s_slogan-with-img*/
 .s_slogan-with-img{
   p {
@@ -348,3 +303,27 @@ p{
     color: @white;
   }
 }
+
+/*SELL-PAGE*/
+/* s_four-column */
+.s_four-column{
+  &.white{
+    background: @white;
+  }
+  h2{
+    color: @maroon;
+  }
+  h3{
+    color: @black;
+  }
+}
+.one-column {
+  p{
+    font-size: 14px;
+    @lines-to-show: 6;
+    @font-size: 14px;
+    @line-height: 1.44;
+    max-height: @font-size*@line-height*@lines-to-show;
+  }
+}
+

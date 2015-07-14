@@ -46,7 +46,7 @@ h3 {
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.44;
   color: #000000;
   overflow: hidden;
@@ -204,7 +204,10 @@ p {
 }
 /*s_articles*/
 .article-preview p {
-  max-height: 155.52px;
+  max-height: 138.24px;
+}
+.medical-sleep h2 {
+  color: #903349;
 }
 /*s_footer*/
 .phone-logo-inner {
@@ -247,12 +250,12 @@ p {
 /*SERVICES*/
 /*s_page-content*/
 .s_page-content p {
-  height: 103.68px;
+  max-height: 92.16px;
 }
-.s_page-content .description-full p {
+.s_page-content .description-detailed p {
   height: auto;
 }
-.s_page-content .description-full p:first-child {
+.s_page-content .description-detailed p:first-child {
   font-size: 24px;
   line-height: 1.33;
 }
@@ -279,36 +282,6 @@ p {
   font-weight: 700;
 }
 /*SELL-PAGE*/
-/*s_articles*/
-/*� ������ ��������� �������, ���������� ���� � �����, � �� ������ �����*/
-.description-inner.multiple-paragraphs div {
-  font-size: 18px;
-  line-height: 1.44;
-  max-height: 181.44px;
-  overflow: hidden;
-}
-/* s_four-column */
-.s_four-column.white {
-  background: #ffffff;
-}
-.s_four-column h2 {
-  color: #903349;
-  text-align: center;
-}
-.s_four-column p {
-  text-align: center;
-}
-.s_four-column h3 {
-  color: #000000;
-}
-/* s_four-column
-  without-img*/
-.s_four-column.without-img h3 {
-  color: #903349;
-}
-.s_four-column.without-img p {
-  text-align: left;
-}
 /*s_slogan-with-img*/
 .s_slogan-with-img p {
   text-align: center;
@@ -317,4 +290,19 @@ p {
   font-weight: 400;
   line-height: 1.44;
   color: #ffffff;
+}
+/*SELL-PAGE*/
+/* s_four-column */
+.s_four-column.white {
+  background: #ffffff;
+}
+.s_four-column h2 {
+  color: #903349;
+}
+.s_four-column h3 {
+  color: #000000;
+}
+.one-column p {
+  font-size: 14px;
+  max-height: 120.96px;
 }

@@ -10,6 +10,7 @@
   .description-inner {
     width: 48.937%; /* 460/940 */
     padding: 0 0 0 10.639%; /* 100/940 */
+    margin-top: -5px;
     @media @tablet{
       width: 60%;
       padding: 0 0 0 7%;
@@ -17,13 +18,11 @@
     @media @mobile {
       width: 100%;
       padding: 0;
+      margin-top: 0;
     }
   }
   h1 {
-    padding: 0 0 8.696% 0; /* 40/460 */
-  }
-  a.btn {
-    margin: 6.522% 0 0 0; /* 30/460 */
+    padding: 0 0 40px 0;
   }
 }
 
@@ -96,6 +95,7 @@
     }
   }
 }
+
 /*SERVICES*/
 /*s_page-content*/
 .s_page-content{
@@ -129,6 +129,9 @@
   .description-inner {
     width: 65.956%; /* 620/940 */
     padding: 0 0 0 10.639%; /* 100/940 */
+    h2{
+      margin-top: -11px;
+    }
     @media @tablet{
       padding: 0 0 0 7%;
       width: 69.595%;
@@ -136,25 +139,49 @@
     @media @mobile {
       width: 100%;
       padding: 0;
+      h2{
+        margin-top: 0;
+      }
     }
   }
-  h2 {
-    padding: 0 0 4.84% 0; /* 30/620 */
-  }
-  a.btn {
-    margin: 4.84% 0 0 0; /* 30/620 */
+  .description-detailed{
+    margin-top: -7px;
+    @media @mobile {
+      margin-top: 0;
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .s_page-content{
   .description-full{
+    margin-top: -7px;
     p{
-      padding-bottom: 3.227%; /* 20/620 */
       &:first-child{
-        padding-bottom: 4.84%;/* 30/620 */
+        margin: 0 0 40px 0;
       }
-      &:last-child{
-        padding-bottom: 0;
-      }
+    }
+    @media @mobile {
+      margin-top: 0;
     }
   }
 }
