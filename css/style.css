@@ -466,17 +466,6 @@ p {
     margin-top: 0;
   }
 }
-.s_page-content .description-full {
-  margin-top: -7px;
-}
-.s_page-content .description-full p:first-child {
-  margin: 0 0 40px 0;
-}
-@media screen and (max-width: 600px) {
-  .s_page-content .description-full {
-    margin-top: 0;
-  }
-}
 .back {
   display: inline-block;
   margin-right: 4.788%;
