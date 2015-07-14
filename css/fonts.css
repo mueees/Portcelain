@@ -206,9 +206,6 @@ p {
 .article-preview p {
   max-height: 138.24px;
 }
-.medical-sleep h2 {
-  color: #903349;
-}
 /*s_footer*/
 .phone-logo-inner {
   font-family: 'Open Sans', sans-serif;
@@ -283,25 +280,11 @@ p {
 }
 /*SELL-PAGE*/
 /*s_slogan-with-img*/
-.s_slogan-with-img p {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+.slogan-with-img p {
   font-size: 24px;
-  font-weight: 400;
-  line-height: 1.44;
-  color: #ffffff;
 }
 /*SELL-PAGE*/
 /* s_four-column */
-.s_four-column.white {
-  background: #ffffff;
-}
-.s_four-column h2 {
-  color: #903349;
-}
-.s_four-column h3 {
-  color: #000000;
-}
 .one-column p {
   font-size: 14px;
   max-height: 120.96px;

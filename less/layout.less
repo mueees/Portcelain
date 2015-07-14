@@ -72,6 +72,10 @@ li{
     max-width: inherit;
   }
 }
+hr{
+  margin: 0;
+  border-top: 1px solid @black;
+}
 .map-container{
     padding: 0 0 25px 0;
 }
@@ -682,9 +686,6 @@ a.footer-info-inner&:hover{
 .s_slogan {
   &.white {
     background: @white;
-    .section-content {
-      padding: 9.375% 1.042% 0; /* 90/960 10/960*/
-    }
   }
 }
 .slogan-btn{
@@ -696,30 +697,23 @@ a.footer-info-inner&:hover{
 
 /*SELL-PAGE s_slogan*/
 /*s_slogan-with-img*/
-.s_slogan-with-img{
-  &.maroon {
-    background: @maroon;
-  }
-  p {
-    margin: 0 auto;
-    width: 77.66%;
-    @media @tablet{
-      width: 90%;
-    }
-    @media @mobile {
-      width: 100%;
-    }
-  }
+.slogan-with-img{
   .image-inner{
     margin: 0 auto;
-    width: 150px;
-    padding-bottom: 20px;
+    width: 17.554%; /* 165/940*/
+    min-width: 100px;
+    img{
+      border-radius: 50%;
+    }
   }
 }
 
 /*SELL-PAGE*/
 /* s_four-column */
 .s_four-column{
+  &.white{
+  background: @white;
+  }
   text-align: left;
   h2{
     text-align: center;

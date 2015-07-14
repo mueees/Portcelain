@@ -67,6 +67,10 @@ li.without-button {
 li.without-img {
   max-width: inherit;
 }
+hr {
+  margin: 0;
+  border-top: 1px solid #000000;
+}
 .map-container {
   padding: 0 0 25px 0;
 }
@@ -755,10 +759,6 @@ a.footer-info-inner:hover {
 .s_slogan.white {
   background: #ffffff;
 }
-.s_slogan.white .section-content {
-  padding: 9.375% 1.042% 0;
-  /* 90/960 10/960*/
-}
 .slogan-btn {
   text-align: center;
 }
@@ -767,32 +767,22 @@ a.footer-info-inner:hover {
 }
 /*SELL-PAGE s_slogan*/
 /*s_slogan-with-img*/
-.s_slogan-with-img.maroon {
-  background: #903349;
-}
-.s_slogan-with-img p {
+.slogan-with-img .image-inner {
   margin: 0 auto;
-  width: 77.66%;
+  width: 17.554%;
+  /* 165/940*/
+  min-width: 100px;
 }
-@media screen and (max-width: 960px) {
-  .s_slogan-with-img p {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .s_slogan-with-img p {
-    width: 100%;
-  }
-}
-.s_slogan-with-img .image-inner {
-  margin: 0 auto;
-  width: 150px;
-  padding-bottom: 20px;
+.slogan-with-img .image-inner img {
+  border-radius: 50%;
 }
 /*SELL-PAGE*/
 /* s_four-column */
 .s_four-column {
   text-align: left;
+}
+.s_four-column.white {
+  background: #ffffff;
 }
 .s_four-column h2 {
   text-align: center;
