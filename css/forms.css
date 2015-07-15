@@ -138,10 +138,10 @@
 /*icon-hamburger*/
 .icon-hamburger {
   position: absolute;
-  top: 16%;
-  /* (55-35)/125 */
-  right: 1.812%;
-  /*10/552 */
+  top: 50%;
+  margin-top: -35px;
+  /*70/2*/
+  right: 10px;
   width: 70px;
   height: 70px;
   border: none;
@@ -215,6 +215,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 0;
 }
 .menu-hamburger:checked ~ .icon-hamburger span {
   background: none;
@@ -254,13 +255,14 @@
 .languages {
   position: absolute;
   top: 0;
-  right: 1.042%;
+  right: 10px;
 }
 @media screen and (max-width: 960px) {
   .languages {
-    top: 29%;
-    right: 21.74%;
-    /* 120/552 */
+    top: 50%;
+    margin-top: -23px;
+    /* 46/2 */
+    right: 25%;
   }
 }
 .languages > a {

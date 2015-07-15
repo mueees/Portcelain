@@ -203,7 +203,7 @@ p {
   text-align: center;
 }
 /*s_articles*/
-.article-preview p {
+.l-3-col .col p {
   max-height: 138.24px;
 }
 /*s_footer*/
@@ -285,7 +285,7 @@ p {
 }
 /*SELL-PAGE*/
 /* s_four-column */
-.one-column p {
+.l-4-col .col p {
   font-size: 14px;
   max-height: 120.96px;
 }
