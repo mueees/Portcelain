@@ -754,7 +754,7 @@ a.footer-info-inner:hover {
 .s_footer-example h3 {
   float: left;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .s_footer-example h3 {
     float: none;
   }
@@ -762,7 +762,7 @@ a.footer-info-inner:hover {
 .s_footer-example .b_nav-btn {
   float: right;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .s_footer-example .b_nav-btn {
     float: none;
   }
