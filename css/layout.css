@@ -762,6 +762,11 @@ a.footer-info-inner:hover {
 .s_footer-example .b_nav-btn {
   float: right;
 }
+@media screen and (max-width: 600px) {
+  .s_footer-example .b_nav-btn {
+    float: none;
+  }
+}
 .b_nav-btn {
   display: inline-block;
   list-style: none;
