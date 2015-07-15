@@ -227,8 +227,7 @@ hr {
     right: 0;
     /* -530px */
     float: none;
-    display: none;
-    /*block;*/
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
