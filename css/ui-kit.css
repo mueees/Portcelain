@@ -649,29 +649,29 @@ hr {
   }
 }
 @media screen and (max-width: 800px) {
-  .col.hidden-list:last-child {
+  .l_columns-inner.hidden-list .col:last-child {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .col.hidden-list:last-child {
+  .l_columns-inner.hidden-list .col:last-child {
     display: inline-block;
   }
 }
-.l_columns-inner .col.without-button {
+.l_columns-inner.without-button .col {
   padding: 0 10px 0;
 }
 @media screen and (max-width: 600px) {
-  .l_columns-inner .col.without-button {
+  .l_columns-inner.without-button .col {
     padding: 0;
   }
+}
+.l_columns-inner.without-img .col {
+  max-width: inherit;
 }
 .l_columns-inner .description-inner.full p {
   max-height: inherit;
   height: auto;
-}
-.l_columns-inner .col.without-img {
-  max-width: inherit;
 }
 .col-btn {
   position: absolute;
