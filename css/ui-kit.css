@@ -208,6 +208,10 @@ hr {
   margin: 0;
   border-top: 1px solid #000000;
 }
+.description-inner.full p {
+  max-height: inherit;
+  height: auto;
+}
 .map-container {
   padding: 0 0 25px 0;
 }
