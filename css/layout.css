@@ -171,18 +171,6 @@ hr {
     background-color: #cccccc;
   }
 }
-/*
-.s-head{
-  .section-content{
-    padding: 3.125% 1.042%;/* 30/960 10/960
-    @media @tablet{
-      padding: 4.167% 1.042% 3.334%;
-    }
-    @media @mobile{
-      padding: 4.167% 4% 3.334%; /* 25/600 20/600
-    }
-  }
-}*/
 .s-head .section-content {
   padding: 30px 10px;
 }
