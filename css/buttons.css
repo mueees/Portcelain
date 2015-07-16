@@ -21,23 +21,23 @@
     padding: 12px 30px;
   }
 }
-.btn.with-bg {
-  background: #903349;
-  color: white;
-}
-.btn.with-bg:hover {
-  background: #ffffff;
-  color: #903349;
-}
 a.btn {
   text-decoration: none;
   display: inline-block;
 }
-.slogan-btn .btn {
-  border: 1px solid #ffffff;
+.btn-white {
+  color: #903349;
+  background: #ffffff;
+}
+.btn-white:hover {
+  background: #903349;
   color: #ffffff;
 }
-.slogan-btn .btn:hover {
+.btn-maroon {
+  color: #ffffff;
+  background: #903349;
+}
+.btn-maroon:hover {
   background: #ffffff;
   color: #903349;
 }

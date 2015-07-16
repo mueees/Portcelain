@@ -244,7 +244,7 @@
 /*������ �� ��������!!!!!!!!!!*/
 @media screen and (max-width: 960px) {
   .menu-hamburger:checked ~ .header-navigation {
-    right: 0;
+    display: block;
   }
 }
 @media screen and (max-width: 960px) {

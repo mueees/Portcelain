@@ -1,4 +1,4 @@
-@import "colours.less";
+@import "colors.less";
 @import "breakpoints";
 @import "mixins";
 .btn{
@@ -21,26 +21,25 @@
   @media @mobile {
     padding: 12px 30px;
   }
-  &.with-bg{
-    background: @maroon;
-    color: white;
-    &:hover{
-      background: @white;
-      color: @maroon;
-    }
-  }
 }
 a.btn{
   text-decoration: none;
   display: inline-block;
 }
-.slogan-btn{
-  .btn {
-    border: 1px solid @white;
+.btn-white{
+  color: @maroon;
+  background: @white;
+  &:hover{
+    background: @maroon;
     color: @white;
-    &:hover{
-      background: @white;
-      color: @maroon;
-    }
   }
 }
+.btn-maroon{
+  color: @white;
+  background: @maroon;
+  &:hover{
+    background: @white;
+    color: @maroon;
+  }
+}
+

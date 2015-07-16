@@ -5,7 +5,6 @@ h1 {
   font-weight: 600;
   line-height: 1;
   color: #903349;
-  text-align: left;
 }
 @media screen and (max-width: 960px) {
   h1 {
@@ -24,7 +23,7 @@ h2 {
   font-weight: 600;
   line-height: 1.333;
   color: #000000;
-  text-align: left;
+  padding: 0 0 30px 0;
 }
 @media screen and (max-width: 960px) {
   h2 {
@@ -42,6 +41,12 @@ h3 {
   font-weight: 700;
   color: #903349;
   line-height: 1.25;
+  padding: 10px 0 30px 0;
+}
+@media screen and (max-width: 800px) {
+  h3 {
+    padding: 10px 0 20px 0;
+  }
 }
 p {
   font-family: 'Open Sans', sans-serif;
@@ -50,6 +55,12 @@ p {
   line-height: 1.44;
   color: #000000;
   overflow: hidden;
+  margin: 0 0 25px 0;
+}
+@media screen and (max-width: 800px) {
+  p {
+    margin: 0 0 15px 0;
+  }
 }
 .breadcrumbs a {
   font-family: 'Open Sans', sans-serif;
@@ -249,10 +260,7 @@ p {
 .s_page-content p {
   max-height: 92.16px;
 }
-.s_page-content .description-detailed p {
-  height: auto;
-}
-.s_page-content .description-detailed p:first-child {
+.txt-large {
   font-size: 24px;
   line-height: 1.33;
 }
@@ -437,11 +445,11 @@ p {
     margin-top: 0;
   }
 }
-.s_page-content .description-detailed {
+.s_page-content .txt-large {
   margin-top: -7px;
 }
 @media screen and (max-width: 600px) {
-  .s_page-content .description-detailed {
+  .s_page-content .txt-large {
     margin-top: 0;
   }
 }
