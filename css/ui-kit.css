@@ -393,12 +393,12 @@ hr {
   float: left;
   cursor: pointer;
   padding: 0 18px 20px 18px;
-  /*&:hover .sub-menu-l2 {
-      display: block;
-    }*/
 }
 .b_nav-menu > li:last-child {
   padding: 0 0 20px 18px;
+}
+.b_nav-menu > li:hover .sub-menu-l2 {
+  display: block;
 }
 .b_nav-menu > li:hover .triangle-nav {
   display: block;
@@ -419,9 +419,6 @@ hr {
   }
   .b_nav-menu > li:hover {
     background: #ffffff;
-  }
-  .b_nav-menu > li:hover .sub-menu-l2 {
-    display: none;
   }
 }
 @media screen and (max-width: 960px) {

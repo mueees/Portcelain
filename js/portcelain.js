@@ -102,7 +102,7 @@ $(document).ready(function(){
         }
 
 
-    function handleNavigationMenuTabs() {
+   /** function handleNavigationMenuTabs() {
         $(document).on('click', ".device-menu-tab", showTabContent);
 
         function showTabContent() {
