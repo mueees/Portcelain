@@ -36,8 +36,10 @@ a.btn {
 .btn-maroon {
   color: #ffffff;
   background: #903349;
+  border: 1px solid #ffffff;
 }
 .btn-maroon:hover {
   background: #ffffff;
   color: #903349;
+  border: 1px solid #903349;
 }

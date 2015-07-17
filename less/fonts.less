@@ -76,7 +76,7 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 48px;
-    line-height: 1;
+    line-height: 1.3;
     color: @black;
 }
 .b_nav-menu {
@@ -112,7 +112,7 @@ p{
       }
     }
   }
-  >li.active-link{
+  >li.active{
     cursor: default;
     >a {
       color: @maroon;
@@ -202,17 +202,14 @@ p{
 }
 
 /*s_articles*/
-.l-3-col{
-  .col {
-    p {
-      @lines-to-show: 6;
-      @font-size: 16px;
-      @line-height: 1.44;
-      max-height: @font-size*@line-height*@lines-to-show;
-    }
+.cut-6-lines{
+  p{
+    @lines-to-show: 6;
+    @font-size: 16px;
+    @line-height: 1.44;
+    max-height: @font-size*@line-height*@lines-to-show;
   }
 }
-
 /*s_footer*/
 .phone-logo-inner{
   font-family: 'Open Sans', sans-serif;
@@ -256,8 +253,8 @@ p{
 
 /*SERVICES*/
 /*s_page-content*/
-.s_page-content {
-  p {
+.cut-4-lines{
+  p{
     @lines-to-show: 4;
     @font-size: 16px;
     @line-height: 1.44;
@@ -300,11 +297,23 @@ p{
 
 /*SELL-PAGE*/
 /* s_four-column */
-.l-4-col{
-  .col {
+.l-4-col {
+  p{
+    font-size: 14px;
+  }
+  .cut-6-lines {
     p {
       font-size: 14px;
       @lines-to-show: 6;
+      @font-size: 14px;
+      @line-height: 1.44;
+      max-height: @font-size*@line-height*@lines-to-show;
+    }
+  }
+  .cut-4-lines {
+    p {
+      font-size: 14px;
+      @lines-to-show: 4;
       @font-size: 14px;
       @line-height: 1.44;
       max-height: @font-size*@line-height*@lines-to-show;

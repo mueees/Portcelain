@@ -277,38 +277,33 @@ hr {
 }
 .slide-description {
   position: absolute;
-  bottom: 150px;
+  top: 160px;
   right: 10px;
-  width: 340px;
-  height: 291px;
+  min-width: 300px;
+  max-width: 45%;
+  max-height: 460px;
   background: rgba(255, 255, 255, 0.7);
-  padding: 35px 20px 25px 0;
+  padding: 35px 15px 25px;
   text-align: right;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
 }
 @media screen and (max-width: 960px) {
   .slide-description {
-    bottom: 80px;
     right: 0;
     left: 0;
     margin: auto;
-    width: 56.6667%;
-    /* 340/600 */
-    min-width: 300px;
-    max-width: 340px;
   }
 }
 .slide-title {
   margin: 0 0 35px 0;
-  height: 148px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  max-height: 317px;
+  -webkit-line-clamp: 5;
   display: -webkit-box;
-  max-width: 320px;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
 }
 .b_header {
   position: absolute;
@@ -367,9 +362,10 @@ hr {
     position: absolute;
     top: 0;
     right: 0;
-    /* -530px */
     float: none;
-    display: none;
+    display: block;
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
   }
 }
 @media screen and (max-width: 600px) {
@@ -387,6 +383,9 @@ hr {
     top: 185px;
   }
 }
+.show-navigation {
+  visibility: visible;
+}
 .b_nav-menu {
   overflow: hidden;
 }
@@ -394,12 +393,12 @@ hr {
   float: left;
   cursor: pointer;
   padding: 0 18px 20px 18px;
+  /*&:hover .sub-menu-l2 {
+      display: block;
+    }*/
 }
 .b_nav-menu > li:last-child {
   padding: 0 0 20px 18px;
-}
-.b_nav-menu > li:hover .sub-menu-l2 {
-  display: block;
 }
 .b_nav-menu > li:hover .triangle-nav {
   display: block;
@@ -423,9 +422,6 @@ hr {
   }
   .b_nav-menu > li:hover .sub-menu-l2 {
     display: none;
-  }
-  .b_nav-menu > li:hover .sub-menu-l2.active {
-    display: block;
   }
 }
 @media screen and (max-width: 960px) {
@@ -510,16 +506,22 @@ hr {
   -o-transform: translate(-50%, -50%);
   width: 90%;
   height: auto;
+  max-height: 400px;
   text-align: center;
   background: rgba(255, 255, 255, 0.7);
   padding: 50px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .slide-info h2 {
   padding: 2.315% 0 5.788% 0;
   /* 20/(960-10%)  50/864 */
+}
+.slide-info .slide-info-inner {
+  overflow: hidden;
+  max-height: 265px;
 }
 /*section s_main-info*/
 .b_with-left-image .image-inner {
@@ -608,6 +610,14 @@ hr {
   display: inline-block;
   margin-right: 10px;
 }
+.l-2-col .col {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .l-2-col .col {
+    width: 100%;
+  }
+}
 .l-3-col .col {
   width: 33.33333%;
 }
@@ -634,27 +644,35 @@ hr {
     width: 100%;
   }
 }
+.l-4-col .col .btn {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+@media screen and (max-width: 960px) {
+  .l-4-col .col .btn {
+    padding: 12px 40px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 800px) {
-  .l_columns-inner.hidden-list .col:last-child {
+  .l_columns-inner.hidden-col .col:last-child {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .l_columns-inner.hidden-list .col:last-child {
+  .l_columns-inner.hidden-col .col:last-child {
     display: inline-block;
   }
-}
-.l_columns-inner.without-img .col {
-  max-width: inherit;
-}
-.l_columns-inner .description-inner.full p {
-  max-height: inherit;
-  height: auto;
 }
 .video-wrapper {
   position: relative;
   padding-bottom: 75%;
   height: 0;
+}
+@media screen and (max-width: 600px) {
+  .video-wrapper {
+    padding-bottom: 65%;
+  }
 }
 .video-wrapper iframe {
   position: absolute;
@@ -662,6 +680,11 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .video-wrapper iframe {
+    width: 85%;
+  }
 }
 /*SELL-PAGE*/
 /* s_about-doctors */
@@ -916,6 +939,9 @@ a.footer-info-inner:hover {
 .s_slogan.maroon {
   background: #903349;
 }
+.s_slogan.maroon .btn-maroon:hover {
+  border: 1px solid #ffffff;
+}
 .s_slogan p {
   margin: 0 auto;
   width: 77.66%;
@@ -1001,10 +1027,12 @@ a.btn {
 .btn-maroon {
   color: #ffffff;
   background: #903349;
+  border: 1px solid #ffffff;
 }
 .btn-maroon:hover {
   background: #ffffff;
   color: #903349;
+  border: 1px solid #903349;
 }
 /*style for all*/
 h1 {
@@ -1089,7 +1117,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 1;
+  line-height: 1.3;
   color: #000000;
 }
 .b_nav-menu > li {
@@ -1130,15 +1158,15 @@ p {
     color: #ffffff;
   }
 }
-.b_nav-menu > li.active-link {
+.b_nav-menu > li.active {
   cursor: default;
 }
-.b_nav-menu > li.active-link > a {
+.b_nav-menu > li.active > a {
   color: #903349;
   cursor: default;
 }
 @media screen and (max-width: 960px) {
-  .b_nav-menu > li.active-link {
+  .b_nav-menu > li.active {
     background: #ffffff;
   }
 }
@@ -1222,7 +1250,7 @@ p {
   text-align: center;
 }
 /*s_articles*/
-.l-3-col .col p {
+.cut-6-lines p {
   max-height: 138.24px;
 }
 /*s_footer*/
@@ -1265,7 +1293,7 @@ p {
 }
 /*SERVICES*/
 /*s_page-content*/
-.s_page-content p {
+.cut-4-lines p {
   max-height: 92.16px;
 }
 .txt-large {
@@ -1301,9 +1329,16 @@ p {
 }
 /*SELL-PAGE*/
 /* s_four-column */
-.l-4-col .col p {
+.l-4-col p {
+  font-size: 14px;
+}
+.l-4-col .cut-6-lines p {
   font-size: 14px;
   max-height: 120.96px;
+}
+.l-4-col .cut-4-lines p {
+  font-size: 14px;
+  max-height: 80.64px;
 }
 /*search-container*/
 .search-container {
@@ -1346,13 +1381,6 @@ p {
   background: url("../img/search_icon.png") no-repeat;
   width: 18px;
   height: 17px;
-  /*�� �����   &:active.form_search{
-    display: block;
-  }
-  &:hover.triangle-search
-  &:active.triangle-search{
-    display: block;
-  }*/
 }
 @media screen and (max-width: 960px) {
   .icon-search {
@@ -1442,12 +1470,11 @@ p {
   right: 5px;
   display: block;
 }
-/*icon-hamburger*/
+/*icon-hamburger
 .icon-hamburger {
   position: absolute;
   top: 50%;
-  margin-top: -35px;
-  /*70/2*/
+  margin-top: -35px;/*70/2
   right: 10px;
   width: 70px;
   height: 70px;
@@ -1456,9 +1483,7 @@ p {
   cursor: pointer;
   display: none;
   z-index: 4;
-}
-@media screen and (max-width: 960px) {
-  .icon-hamburger {
+  @media @tablet {
     display: block;
   }
 }
@@ -1469,11 +1494,8 @@ p {
   left: 15px;
   right: 15px;
   height: 5px;
-  background: #000000;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  background: @black;
+ .transition(all 0.3s);
 }
 .icon-hamburger span::before,
 .icon-hamburger span::after {
@@ -1481,18 +1503,12 @@ p {
   position: absolute;
   width: 100%;
   height: 5px;
-  background: #000000;
+  background: @black;
   content: "";
-  transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  transition-delay: 0.1s;
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
+  .transition-duration(0.3s);
+  .transition-delay(0.1s);
 }
-.icon-hamburger span::before {
+.icon-hamburger span::before{
   top: -11px;
   transition-property: top, transform;
   -webkit-transition-property: top, -webkit-transform;
@@ -1504,20 +1520,21 @@ p {
   transition-property: bottom, transform;
   -webkit-transition-property: bottom, transform;
   -o-transition-property: bottom, transform;
-  -moz-transition-property: bottom, transform;
+  -moz-transition-property:bottom, transform;
 }
 .menu-hamburger {
   display: none;
 }
+
 .icon-hamburger span::before,
-.icon-hamburger span::after {
+.icon-hamburger span::after{
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
 }
-.menu-hamburger:checked ~ .icon-hamburger {
-  background: #ffffff;
+.menu-hamburger:checked ~ .icon-hamburger{
+  background: @white;
   z-index: 4;
   position: absolute;
   top: 0;
@@ -1525,39 +1542,108 @@ p {
   margin-top: 0;
 }
 .menu-hamburger:checked ~ .icon-hamburger span {
-  background: none;
+    background: none;
 }
 .menu-hamburger:checked ~ .icon-hamburger span::before,
 .menu-hamburger:checked ~ .icon-hamburger span::after {
-  transition-delay: 0.1s;
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
+  .transition-delay(0.1s);
 }
-.menu-hamburger:checked ~ .icon-hamburger span::before {
+.menu-hamburger:checked ~ .icon-hamburger span::before{
+  top: 0;
+  .transform(rotate(45deg));
+}
+.menu-hamburger:checked ~ .icon-hamburger span::after {
+    bottom: 0;
+    .transform(rotate(-45deg));
+}
+
+
+/*������ �� ��������!!!!!!!!!!
+.menu-hamburger:checked ~ .header-navigation {
+  @media @tablet {
+    display: block;
+  }
+}
+.menu-hamburger:checked ~ .overlay {
+   @media @tablet {
+     display: block;
+   }
+ }
+*/
+/*icon-hamburger*/
+.icon-hamburger {
+  z-index: 4;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.icon-hamburger span {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  right: 15px;
+  height: 5px;
+  background: #000000;
+}
+.icon-hamburger span::before,
+.icon-hamburger span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #000000;
+  content: "";
+}
+/*open-icon-hamburger*/
+.open-icon-hamburger {
+  transition-delay: 0.2s;
+  display: none;
+  background: transparent;
+  top: 50%;
+  margin-top: -35px;
+  /*70/2*/
+  right: 10px;
+}
+@media screen and (max-width: 960px) {
+  .open-icon-hamburger {
+    display: block;
+  }
+}
+.open-icon-hamburger span::before {
+  top: -11px;
+}
+.open-icon-hamburger span::after {
+  bottom: -11px;
+}
+/*close-icon-hamburger*/
+.close-icon-hamburger {
+  transition-delay: 0.2s;
+  background: #ffffff;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  display: none;
+}
+.close-icon-hamburger span {
+  background: none;
+}
+.close-icon-hamburger span::before {
   top: 0;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
-.menu-hamburger:checked ~ .icon-hamburger span::after {
+.close-icon-hamburger span::after {
   bottom: 0;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
-}
-/*������ �� ��������!!!!!!!!!!*/
-@media screen and (max-width: 960px) {
-  .menu-hamburger:checked ~ .header-navigation {
-    display: block;
-  }
-}
-@media screen and (max-width: 960px) {
-  .menu-hamburger:checked ~ .overlay {
-    display: block;
-  }
 }
 .languages {
   position: absolute;

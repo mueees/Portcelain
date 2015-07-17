@@ -38,13 +38,6 @@
   background: url("../img/search_icon.png") no-repeat;
   width: 18px;
   height: 17px;
-  /*Õ≈ Õ”∆ÕŒ   &:active.form_search{
-    display: block;
-  }
-  &:hover.triangle-search
-  &:active.triangle-search{
-    display: block;
-  }*/
   @media @tablet {
     background: url("../img/search_icon_tablet.png") no-repeat;
     width: 31px;
@@ -119,11 +112,11 @@
   display: block;
 }
 
-/*icon-hamburger*/
+/*icon-hamburger
 .icon-hamburger {
   position: absolute;
   top: 50%;
-  margin-top: -35px;/*70/2*/
+  margin-top: -35px;/*70/2
   right: 10px;
   width: 70px;
   height: 70px;
@@ -144,7 +137,7 @@
   right: 15px;
   height: 5px;
   background: @black;
-  .transition(all 0.3s);
+ .transition(all 0.3s);
 }
 .icon-hamburger span::before,
 .icon-hamburger span::after {
@@ -174,6 +167,7 @@
 .menu-hamburger {
   display: none;
 }
+
 .icon-hamburger span::before,
 .icon-hamburger span::after{
   transition: all 0.3s;
@@ -206,7 +200,7 @@
 }
 
 
-/*œŒ◊≈Ã” Õ≈ –¿¡Œ“¿≈“!!!!!!!!!!*/
+/*œŒ◊≈Ã” Õ≈ –¿¡Œ“¿≈“!!!!!!!!!!
 .menu-hamburger:checked ~ .header-navigation {
   @media @tablet {
     display: block;
@@ -217,7 +211,74 @@
      display: block;
    }
  }
+*/
 
+/*icon-hamburger*/
+.icon-hamburger {
+  z-index: 4;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.icon-hamburger span {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  right: 15px;
+  height: 5px;
+  background: @black;
+}
+.icon-hamburger span::before,
+.icon-hamburger span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: @black;
+  content: "";
+}
+/*open-icon-hamburger*/
+.open-icon-hamburger{
+  transition-delay: 0.2s;
+  display: none;
+  background: transparent;
+  top: 50%;
+  margin-top: -35px;/*70/2*/
+  right: 10px;
+  @media @tablet {
+    display: block;
+  }
+}
+.open-icon-hamburger span::before{
+  top: -11px;
+}
+.open-icon-hamburger span::after {
+  bottom: -11px;
+}
+/*close-icon-hamburger*/
+.close-icon-hamburger{
+  transition-delay: 0.2s;
+  background: @white;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  display: none;
+}
+.close-icon-hamburger span {
+  background: none;
+}
+.close-icon-hamburger span::before{
+  top: 0;
+  .transform(rotate(45deg));
+}
+.close-icon-hamburger span::after {
+  bottom: 0;
+  .transform(rotate(-45deg));
+}
 .languages{
   position: absolute;
   top: 0;

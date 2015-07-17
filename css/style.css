@@ -81,7 +81,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 1;
+  line-height: 1.3;
   color: #000000;
 }
 .b_nav-menu > li {
@@ -122,15 +122,15 @@ p {
     color: #ffffff;
   }
 }
-.b_nav-menu > li.active-link {
+.b_nav-menu > li.active {
   cursor: default;
 }
-.b_nav-menu > li.active-link > a {
+.b_nav-menu > li.active > a {
   color: #903349;
   cursor: default;
 }
 @media screen and (max-width: 960px) {
-  .b_nav-menu > li.active-link {
+  .b_nav-menu > li.active {
     background: #ffffff;
   }
 }
@@ -214,7 +214,7 @@ p {
   text-align: center;
 }
 /*s_articles*/
-.l-3-col .col p {
+.cut-6-lines p {
   max-height: 138.24px;
 }
 /*s_footer*/
@@ -257,7 +257,7 @@ p {
 }
 /*SERVICES*/
 /*s_page-content*/
-.s_page-content p {
+.cut-4-lines p {
   max-height: 92.16px;
 }
 .txt-large {
@@ -293,9 +293,16 @@ p {
 }
 /*SELL-PAGE*/
 /* s_four-column */
-.l-4-col .col p {
+.l-4-col p {
+  font-size: 14px;
+}
+.l-4-col .cut-6-lines p {
   font-size: 14px;
   max-height: 120.96px;
+}
+.l-4-col .cut-4-lines p {
+  font-size: 14px;
+  max-height: 80.64px;
 }
 /*section s_main-info*/
 .s_main-info .image-inner {
