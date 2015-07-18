@@ -290,9 +290,6 @@ hr {
     width: 95%;
     display: block;
   }
-  .b_nav-menu .nav-link.device-menu-tab.active .sub-menu-l2 {
-    display: block;
-  }
 }
 .b_nav-menu .nav-link.device-menu-tab.mobile {
   display: none;
