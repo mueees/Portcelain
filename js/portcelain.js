@@ -114,17 +114,15 @@ $(document).ready(function(){
     $(document).on('click', ".languages-open", showLanguages);
 
     // Hide languages menu (for devices)
-    $(document).on('click', ".languages-link", closeLanguages);
-
+    $(document).on('click', ".language-link", closeLanguages);
 
     function showLanguages() {
         $('.languages-drop-down').addClass('active');
     }
     function closeLanguages() {
-       // $('.languages-drop-down').removeClass('active');
-        $('.languages-link').removeClass('select');
+        $('.languages-drop-down').removeClass('active');
+        $('.language-link').removeClass('select');
         $(this).addClass('select');
-
 
     }
 
