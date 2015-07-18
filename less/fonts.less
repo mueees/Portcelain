@@ -162,8 +162,9 @@ p{
   }
 }
 
-.languages{
-  a{
+.languages {
+  a,
+  span {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -171,15 +172,19 @@ p{
     font-size: 18px;
     line-height: 1.6;
     color: @black;
-    &:hover{
+    &:hover {
       color: @maroon;
     }
     @media @tablet {
       font-size: 26px;
       line-height: 1.77;
     }
-    &.select{
-      color: @maroon;
+  }
+  .languages-link {
+    &.select {
+      a {
+        color: @maroon;
+      }
     }
   }
 }

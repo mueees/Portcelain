@@ -176,7 +176,8 @@ p {
     color: #ffffff;
   }
 }
-.languages a {
+.languages a,
+.languages span {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -185,16 +186,18 @@ p {
   line-height: 1.6;
   color: #000000;
 }
-.languages a:hover {
+.languages a:hover,
+.languages span:hover {
   color: #903349;
 }
 @media screen and (max-width: 960px) {
-  .languages a {
+  .languages a,
+  .languages span {
     font-size: 26px;
     line-height: 1.77;
   }
 }
-.languages a.select {
+.languages .languages-link.select a {
   color: #903349;
 }
 /*s_main-info*/
