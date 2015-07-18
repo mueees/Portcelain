@@ -436,14 +436,14 @@ hr {
   .b_nav-menu .nav-link.device-menu-tab:hover .sub-menu-l2 {
     display: none;
   }
+  .b_nav-menu .nav-link.device-menu-tab.active .sub-menu-l2 {
+    display: block;
+  }
   .b_nav-menu .nav-link.device-menu-tab > a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 95%;
-    display: block;
-  }
-  .b_nav-menu .nav-link.device-menu-tab.active .sub-menu-l2 {
     display: block;
   }
 }

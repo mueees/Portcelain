@@ -260,8 +260,15 @@ hr{
         text-align: center;
         width: 48%;
         border-bottom: 3px solid @white;
-        &:hover .sub-menu-l2 {
-          display: none;
+        &:hover {
+          .sub-menu-l2 {
+            display: none;
+          }
+        }
+        &.active{
+          .sub-menu-l2{
+            display: block;
+          }
         }
         >a {
           overflow: hidden;
@@ -269,11 +276,6 @@ hr{
           white-space: nowrap;
           width: 95%;
           display: block;
-        }
-        &.active{
-          .sub-menu-l2{
-            display: block;
-          }
         }
       }
       &.mobile {
