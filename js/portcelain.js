@@ -82,7 +82,8 @@ $(document).ready(function(){
     $(document).on('click', ".open-icon-hamburger", showMenu);
 
     // Hide navigation menu (for devices)
-    $(document).on('click', ".close-icon-hamburger", closeMenu);
+    $(document).on('click', ".close-icon-hamburger",".overlay", closeMenu);
+    $(document).on('click', ".overlay", closeMenu);
 
 
     function showMenu() {

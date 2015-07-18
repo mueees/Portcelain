@@ -247,9 +247,6 @@ hr {
 .header-navigation.show-navigation .close-icon-hamburger {
   display: block;
 }
-.header-navigation.show-navigation .overlay {
-  display: block;
-}
 .b_nav-menu {
   overflow: hidden;
 }
