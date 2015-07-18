@@ -5,6 +5,7 @@
 
 body{
   position: relative;
+  overflow-x: hidden;
 }
 .overlay{
   width: 100%;
@@ -127,11 +128,12 @@ hr{
   }
 }
 .slide-description {
+  max-width: 450px;
+  width: 50%;
   position: absolute;
   top: 160px;
   right: 10px;
   min-width: 300px;
-  max-width: 45%;
   max-height: 460px;
   background: rgba(255, 255, 255, 0.7);
   padding: 35px 15px 25px;
@@ -139,6 +141,7 @@ hr{
   .box-sizing(border-box);
   overflow: hidden;
   @media @tablet{
+    max-width: 45%;
     right: 0;
     left: 0;
     margin: auto;
@@ -165,7 +168,7 @@ hr{
   .section-content{
     padding: 30px 10px;
     @media @mobile{
-      padding: 20px 10px;
+      padding: 10px;
     }
   }
 }
@@ -203,7 +206,6 @@ hr{
     float: none;
     display: block;
     visibility: hidden;
-    transition: all 0.1s ease-in-out;
   }
   @media @mobile {
     width: 100%;
@@ -216,17 +218,33 @@ hr{
       top: 185px;
     }
   }
-}
-.show-navigation{
-  visibility: visible;
+  .open-icon-hamburger{
+    display: block;
+  }
+  .close-icon-hamburger{
+    display: none;
+  }
+  &.show-navigation {
+    visibility: visible;
+    .open-icon-hamburger {
+      display:none;
+    }
+    .close-icon-hamburger{
+      display:block;
+    }
+    .overlay{
+      display: block;
+    }
+  }
 }
 .b_nav-menu {
   overflow: hidden;
-  > li {
+  .nav-link {
+    display: block;
     float: left;
     cursor: pointer;
     padding: 0 18px 20px 18px;
-    &:last-child{
+    &:last-child {
       padding: 0 0 20px 18px;
     }
     &:hover .sub-menu-l2 {
@@ -236,29 +254,38 @@ hr{
       display: block;
     }
     @media @tablet{
-      padding: 15px 1%;
-      text-align: center;
-      width: 48%;
-      border-bottom: 3px solid @white;
-      &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6),
-      &:nth-child(7) {
-        display: none;
-      }
-      &:hover {
-        background: @white;
-      }
+      display: none;
     }
-    a {
+    &.device-menu-tab{
+      display: block;
       @media @tablet {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 95%;
-        display: block;
+        padding: 15px 1%;
+        text-align: center;
+        width: 48%;
+        border-bottom: 3px solid @white;
+        &:hover .sub-menu-l2 {
+          display: none;
+        }
+        >a {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 95%;
+          display: block;
+        }
+        &.active{
+          .sub-menu-l2{
+            display: block;
+          }
+        }
       }
+      &.mobile {
+        display: none;
+        @media @tablet{
+          display: block;
+        }
+      }
+
     }
   }
 }
@@ -271,15 +298,21 @@ hr{
   .drop-shadow (0, 0, 10px, 0, 0.5);
   @media @tablet {
     width: 100%;
+    top: 66px;
+    left: 0;
+    right: 0;
   }
-  li{
+  .nav-link{
+    display: block;
+    float: none;
     background: @white;
     padding: 13px 20px;
     border-bottom: 1px solid @hex_gray;
     text-align: left;
     cursor: pointer;
-    :last-child{
-      border-bottom:none;
+    &:last-child{
+      border-bottom: none;
+      padding: 13px 20px;
     }
     &:hover{
       background: @maroon;
@@ -293,25 +326,15 @@ hr{
       }
     }
     a{
-      white-space: pre-line;
+      word-wrap: break-word;
+      white-space: pre-line
     }
   }
-  @media @tablet {
-    top: 66px;
-    left: 0;
-    right: 0;
-  }
-  &.active{
+  /*&.active{
     @media @tablet{
       display: block;
     }
-  }
-}
-.mobile-item{
-  display: none;
-  @media @tablet{
-    display: block;
-  }
+  }*/
 }
 
 /*SELL-PAGE*/

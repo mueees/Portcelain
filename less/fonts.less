@@ -80,7 +80,7 @@ p{
     color: @black;
 }
 .b_nav-menu {
-  > li {
+  .nav-link {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -95,8 +95,11 @@ p{
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-size: 28px;
+      &:hover > a {
+        color: @white;
+      }
     }
-    > a {
+    a {
       text-decoration: none;
       color: @black;
       line-height: 1.2;
@@ -104,27 +107,27 @@ p{
         color: @white;
       }
     }
-    >span{
+    span {
       color: @black;
       line-height: 1.2;
       @media @tablet {
         color: @white;
       }
     }
-  }
-  >li.active{
-    cursor: default;
-    >a {
-      color: @maroon;
+    &.active {
       cursor: default;
-    }
-    @media @tablet {
-      background: @white;
+      > a {
+        color: @maroon;
+        cursor: default;
+      }
+      @media @tablet {
+        background: @white;
+      }
     }
   }
 }
 .sub-menu-l2 {
-  li {
+  .nav-link {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -158,6 +161,7 @@ p{
     }
   }
 }
+
 .languages{
   a{
     text-decoration: none;

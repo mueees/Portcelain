@@ -1,6 +1,7 @@
 /*Style for all*/
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .overlay {
   width: 100%;
@@ -123,11 +124,12 @@ hr {
   }
 }
 .slide-description {
+  max-width: 450px;
+  width: 50%;
   position: absolute;
   top: 160px;
   right: 10px;
   min-width: 300px;
-  max-width: 45%;
   max-height: 460px;
   background: rgba(255, 255, 255, 0.7);
   padding: 35px 15px 25px;
@@ -139,6 +141,7 @@ hr {
 }
 @media screen and (max-width: 960px) {
   .slide-description {
+    max-width: 45%;
     right: 0;
     left: 0;
     margin: auto;
@@ -168,7 +171,7 @@ hr {
 }
 @media screen and (max-width: 600px) {
   .s-head .section-content {
-    padding: 20px 10px;
+    padding: 10px;
   }
 }
 .site-logo {
@@ -212,7 +215,6 @@ hr {
     float: none;
     display: block;
     visibility: hidden;
-    transition: all 0.1s ease-in-out;
   }
 }
 @media screen and (max-width: 600px) {
@@ -230,50 +232,76 @@ hr {
     top: 185px;
   }
 }
-.show-navigation {
+.header-navigation .open-icon-hamburger {
+  display: block;
+}
+.header-navigation .close-icon-hamburger {
+  display: none;
+}
+.header-navigation.show-navigation {
   visibility: visible;
+}
+.header-navigation.show-navigation .open-icon-hamburger {
+  display: none;
+}
+.header-navigation.show-navigation .close-icon-hamburger {
+  display: block;
+}
+.header-navigation.show-navigation .overlay {
+  display: block;
 }
 .b_nav-menu {
   overflow: hidden;
 }
-.b_nav-menu > li {
+.b_nav-menu .nav-link {
+  display: block;
   float: left;
   cursor: pointer;
   padding: 0 18px 20px 18px;
 }
-.b_nav-menu > li:last-child {
+.b_nav-menu .nav-link:last-child {
   padding: 0 0 20px 18px;
 }
-.b_nav-menu > li:hover .sub-menu-l2 {
+.b_nav-menu .nav-link:hover .sub-menu-l2 {
   display: block;
 }
-.b_nav-menu > li:hover .triangle-nav {
+.b_nav-menu .nav-link:hover .triangle-nav {
   display: block;
 }
 @media screen and (max-width: 960px) {
-  .b_nav-menu > li {
+  .b_nav-menu .nav-link {
+    display: none;
+  }
+}
+.b_nav-menu .nav-link.device-menu-tab {
+  display: block;
+}
+@media screen and (max-width: 960px) {
+  .b_nav-menu .nav-link.device-menu-tab {
     padding: 15px 1%;
     text-align: center;
     width: 48%;
     border-bottom: 3px solid #ffffff;
   }
-  .b_nav-menu > li:nth-child(3),
-  .b_nav-menu > li:nth-child(4),
-  .b_nav-menu > li:nth-child(5),
-  .b_nav-menu > li:nth-child(6),
-  .b_nav-menu > li:nth-child(7) {
+  .b_nav-menu .nav-link.device-menu-tab:hover .sub-menu-l2 {
     display: none;
   }
-  .b_nav-menu > li:hover {
-    background: #ffffff;
-  }
-}
-@media screen and (max-width: 960px) {
-  .b_nav-menu > li a {
+  .b_nav-menu .nav-link.device-menu-tab > a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 95%;
+    display: block;
+  }
+  .b_nav-menu .nav-link.device-menu-tab.active .sub-menu-l2 {
+    display: block;
+  }
+}
+.b_nav-menu .nav-link.device-menu-tab.mobile {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .b_nav-menu .nav-link.device-menu-tab.mobile {
     display: block;
   }
 }
@@ -286,57 +314,49 @@ hr {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  /*&.active{
+    @media @tablet{
+      display: block;
+    }
+  }*/
 }
 @media screen and (max-width: 960px) {
   .sub-menu-l2 {
     width: 100%;
+    top: 66px;
+    left: 0;
+    right: 0;
   }
 }
-.sub-menu-l2 li {
+.sub-menu-l2 .nav-link {
+  display: block;
+  float: none;
   background: #ffffff;
   padding: 13px 20px;
   border-bottom: 1px solid #cccccc;
   text-align: left;
   cursor: pointer;
 }
-.sub-menu-l2 li :last-child {
+.sub-menu-l2 .nav-link:last-child {
   border-bottom: none;
+  padding: 13px 20px;
 }
-.sub-menu-l2 li:hover {
+.sub-menu-l2 .nav-link:hover {
   background: #903349;
 }
 @media screen and (max-width: 960px) {
-  .sub-menu-l2 li {
+  .sub-menu-l2 .nav-link {
     border-bottom: none;
     background: #903349;
     padding: 15px 20px;
   }
-  .sub-menu-l2 li:hover {
+  .sub-menu-l2 .nav-link:hover {
     background: #ffffff;
   }
 }
-.sub-menu-l2 li a {
+.sub-menu-l2 .nav-link a {
+  word-wrap: break-word;
   white-space: pre-line;
-}
-@media screen and (max-width: 960px) {
-  .sub-menu-l2 {
-    top: 66px;
-    left: 0;
-    right: 0;
-  }
-}
-@media screen and (max-width: 960px) {
-  .sub-menu-l2.active {
-    display: block;
-  }
-}
-.mobile-item {
-  display: none;
-}
-@media screen and (max-width: 960px) {
-  .mobile-item {
-    display: block;
-  }
 }
 /*SELL-PAGE*/
 /*s-head*/

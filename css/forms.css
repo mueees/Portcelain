@@ -128,106 +128,6 @@
   right: 5px;
   display: block;
 }
-/*icon-hamburger
-.icon-hamburger {
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;/*70/2
-  right: 10px;
-  width: 70px;
-  height: 70px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: none;
-  z-index: 4;
-  @media @tablet {
-    display: block;
-  }
-}
-.icon-hamburger span {
-  display: block;
-  position: absolute;
-  top: 35px;
-  left: 15px;
-  right: 15px;
-  height: 5px;
-  background: @black;
- .transition(all 0.3s);
-}
-.icon-hamburger span::before,
-.icon-hamburger span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background: @black;
-  content: "";
-  .transition-duration(0.3s);
-  .transition-delay(0.1s);
-}
-.icon-hamburger span::before{
-  top: -11px;
-  transition-property: top, transform;
-  -webkit-transition-property: top, -webkit-transform;
-  -o-transition-property: top, -o-transform;
-  -moz-transition-property: top, -moz-transform;
-}
-.icon-hamburger span::after {
-  bottom: -11px;
-  transition-property: bottom, transform;
-  -webkit-transition-property: bottom, transform;
-  -o-transition-property: bottom, transform;
-  -moz-transition-property:bottom, transform;
-}
-.menu-hamburger {
-  display: none;
-}
-
-.icon-hamburger span::before,
-.icon-hamburger span::after{
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-.menu-hamburger:checked ~ .icon-hamburger{
-  background: @white;
-  z-index: 4;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 0;
-}
-.menu-hamburger:checked ~ .icon-hamburger span {
-    background: none;
-}
-.menu-hamburger:checked ~ .icon-hamburger span::before,
-.menu-hamburger:checked ~ .icon-hamburger span::after {
-  .transition-delay(0.1s);
-}
-.menu-hamburger:checked ~ .icon-hamburger span::before{
-  top: 0;
-  .transform(rotate(45deg));
-}
-.menu-hamburger:checked ~ .icon-hamburger span::after {
-    bottom: 0;
-    .transform(rotate(-45deg));
-}
-
-
-/*������ �� ��������!!!!!!!!!!
-.menu-hamburger:checked ~ .header-navigation {
-  @media @tablet {
-    display: block;
-  }
-}
-.menu-hamburger:checked ~ .overlay {
-   @media @tablet {
-     display: block;
-   }
- }
-*/
 /*icon-hamburger*/
 .icon-hamburger {
   z-index: 4;
@@ -258,17 +158,19 @@
 }
 /*open-icon-hamburger*/
 .open-icon-hamburger {
-  transition-delay: 0.2s;
-  display: none;
+  visibility: hidden;
   background: transparent;
-  top: 50%;
-  margin-top: -35px;
-  /*70/2*/
+  top: 30px;
   right: 10px;
 }
 @media screen and (max-width: 960px) {
   .open-icon-hamburger {
-    display: block;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 600px) {
+  .open-icon-hamburger {
+    top: 10px;
   }
 }
 .open-icon-hamburger span::before {
@@ -279,12 +181,9 @@
 }
 /*close-icon-hamburger*/
 .close-icon-hamburger {
-  transition-delay: 0.2s;
   background: #ffffff;
   top: 0;
   right: 0;
-  margin-top: 0;
-  display: none;
 }
 .close-icon-hamburger span {
   background: none;

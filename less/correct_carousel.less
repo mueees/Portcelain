@@ -1,20 +1,21 @@
-@import "breakpoints";
 /*correct css b_main-slider*/
 .b_main-slider.slick-slider {
-  margin-bottom: 0;
   overflow: hidden;
 }
 
 /*  correct css carousel b_nav-clients
     correct css carousel b_nav-clients-mobile*/
-.b_nav-clients.slick-slider {
-  margin: 0;
-  @media @tablet {
-    margin: 0 30px;
-  }
+@media screen and (max-width: 1001px) {
+  .b_nav-clients.slick-slider,
+  .b_nav-clients-mobile.slick-slider {
+      margin: 0 30px;
+    }
 }
-.b_nav-clients-mobile.slick-slider {
-  margin: 0 30px;
+@media screen and (min-width: 1002px) {
+  .b_nav-clients.slick-slider,
+  .b_nav-clients-mobile.slick-slider {
+    margin: 0;
+  }
 }
 .b_nav-clients .slick-prev:before,
 .b_nav-clients .slick-next:before,
@@ -42,8 +43,8 @@
 .b_nav-clients .slick-next,
 .b_nav-clients-mobile .slick-next {
   top: 50%;
-  margin-top: -37px; /*73/2*/
   right: -30px;
+  margin-top: -37px; /*73/2*/
   background: url("../img/arrow_right.png") no-repeat;
 }
 .b_nav-clients .slick-prev:hover,
