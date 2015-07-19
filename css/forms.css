@@ -210,10 +210,16 @@
 }
 @media screen and (max-width: 960px) {
   .languages {
-    top: 50%;
-    margin-top: -23px;
-    /* 46/2 */
+    /* top: 50%;
+    margin-top: -23px;/* 46/2
+    right: 25%; */
+    top: 45px;
     right: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languages {
+    top: 23px;
   }
 }
 .languages .languages-open {

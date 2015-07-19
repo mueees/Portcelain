@@ -464,11 +464,6 @@ hr {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  /*&.active{
-    @media @tablet{
-      display: block;
-    }
-  }*/
 }
 @media screen and (max-width: 960px) {
   .sub-menu-l2 {
@@ -1572,10 +1567,16 @@ p {
 }
 @media screen and (max-width: 960px) {
   .languages {
-    top: 50%;
-    margin-top: -23px;
-    /* 46/2 */
+    /* top: 50%;
+    margin-top: -23px;/* 46/2
+    right: 25%; */
+    top: 45px;
     right: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languages {
+    top: 23px;
   }
 }
 .languages .languages-open {
