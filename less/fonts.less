@@ -85,19 +85,11 @@ p{
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
-    &:hover > a {
+    &:hover a {
       color: @maroon;
     }
-    &:hover > span {
+    &:hover span {
       color: @maroon;
-    }
-    @media @tablet {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      font-size: 28px;
-      &:hover > a {
-        color: @white;
-      }
     }
     a {
       text-decoration: none;
@@ -114,9 +106,17 @@ p{
         color: @white;
       }
     }
+    @media @tablet {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      &:hover a {
+        color: @white;
+      }
+    }
     &.active {
       cursor: default;
-      > a {
+      a {
         color: @maroon;
         cursor: default;
       }
@@ -128,35 +128,38 @@ p{
 }
 .sub-menu-l2 {
   .nav-link {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: none;
-    &:hover a{
-      color: @white;
-    }
-    @media @tablet {
-      font-size: 28px;
-      &:hover a {
-        color: @maroon;
-      }
-      &:hover span {
-        color: @maroon;
-      }
-    }
-    a {
-      text-decoration: none;
-      color: @black;
-      line-height: 1.2;
-      @media @tablet {
+    &.device-menu-tab{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: none;
+      &:hover a{
         color: @white;
       }
-    }
-    span {
-      color: @black;
-      line-height: 1.2;
       @media @tablet {
-        color: @white;
+        font-size: 28px;
+        &:hover a {
+          color: @maroon;
+        }
+        &:hover span {
+          color: @maroon;
+        }
+      }
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: @black;
+        line-height: 1.2;
+        @media @tablet {
+          color: @white;
+        }
+      }
+      span {
+        color: @black;
+        line-height: 1.2;
+        @media @tablet {
+          color: @white;
+        }
       }
     }
   }

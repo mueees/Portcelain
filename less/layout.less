@@ -254,8 +254,8 @@ hr{
       display: none;
     }
     &.device-menu-tab{
-      display: block;
       @media @tablet {
+        display: block;
         padding: 15px 1%;
         text-align: center;
         width: 48%;
@@ -270,7 +270,7 @@ hr{
             display: block;
           }
         }
-        >a {
+        a {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -315,17 +315,24 @@ hr{
     &:hover{
       background: @maroon;
     }
-    @media @tablet{
-      border-bottom: none;
-      background: @maroon;
-      padding: 15px 20px;
-      &:hover{
-        background: @white;
+    &.device-menu-tab{
+      @media @tablet {
+        text-align: left;
+        width: initial;
+        border-bottom: none;
+        background: @maroon;
+        padding: 15px 20px;
+        &:hover{
+          background: @white;
+        }
+        a{
+          overflow: inherit;
+          text-overflow: initial;
+          white-space: pre-line;
+          width: 100%;
+          word-wrap: break-word;
+        }
       }
-    }
-    a{
-      word-wrap: break-word;
-      white-space: pre-line;
     }
   }
 }
