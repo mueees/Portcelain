@@ -91,7 +91,6 @@ $(document).ready(function(){
             e.preventDefault();
         });
         $('.overlay').css('display', 'block');
-
     }
 
     function closeMenu() {
