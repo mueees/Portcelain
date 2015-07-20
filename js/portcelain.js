@@ -109,20 +109,22 @@ $(document).ready(function(){
 
 
     /**languages menu**/
-    // Show languages menu (for devices)
+        // Show languages menu (for devices)
     $(document).on('click', ".languages-open", showLanguages);
 
     // Hide languages menu (for devices)
-    $(document).on('click', ".language-link", closeLanguages);
+    $(document).on('click', closeLanguages);
 
-    function showLanguages() {
-        $('.languages-drop-down').addClass('active');
+    function showLanguages(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.languages-drop-down').toggleClass('active');
     }
+
     function closeLanguages() {
         $('.languages-drop-down').removeClass('active');
         $('.language-link').removeClass('select');
         $(this).addClass('select');
-
     }
 
 });
