@@ -127,6 +127,29 @@ $(document).ready(function(){
         $(this).addClass('select');
     }
 
+
+    /** popup form-call-back **/
+    // Show form-call-back
+    $(document).on('click', ".btn-call-back", showFormCallBack);
+
+
+    // Hide form-call-back
+    $(document).on('click', ".icon-form-close", closeFormCallBack);
+    $(document).on('click', ".overlay", closeFormCallBack);
+
+
+    function showFormCallBack() {
+        $('.form-call-back').addClass('show-form-call-back');
+        $('.overlay').addClass('for-form-call-back').css('display', 'block');
+        $('body').css('overflow-y', 'hidden');
+    }
+
+    function closeFormCallBack() {
+        $('.overlay').removeClass('for-form-call-back').css('display', 'none');
+        $('.form-call-back').removeClass('show-form-call-back');
+        $('body').css('overflow-y', 'auto');
+    }
+
 });
 
 

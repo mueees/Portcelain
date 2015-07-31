@@ -22,6 +22,9 @@ body{
   @media @tablet {
     visibility: visible;
   }
+  &.for-form-call-back{
+    visibility: visible;
+  }
 }
 .l_content-wrapper {
   width: 960px;
@@ -108,6 +111,46 @@ hr{
     padding: 0 0 10px 0;
   }
 }
+.list-inner{
+  list-style: none;
+  li{
+    padding: 5px 0;
+    &:before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: @black;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.call-back{
+  &.gray{
+    background: @gray;
+  }
+  text-align: center;
+  padding:  30px 5px;
+  margin: 0 0 30px 0;
+  h6{
+    padding: 0;
+  }
+}
+.call-service{
+  padding: 30px;
+  text-align: left;
+  margin: 0 0 30px 5px;
+  .drop-shadow (0, 0, 10px, 0, 0.5);
+  .box-sizing(border-box);
+  width: 90%;
+  .list-inner{
+    margin: 0;
+  }
+}
+
+
 /*s-head*/
 .main-slider-slide{
   overflow: hidden;
@@ -327,7 +370,7 @@ hr{
     &.device-menu-tab{
       @media @tablet {
         text-align: left;
-        width: initial;
+        width: 100%;
         border-bottom: none;
         background: @maroon;
         padding: 15px 20px;
@@ -361,6 +404,9 @@ hr{
   padding: 50px 0;
   .box-sizing(border-box);
   overflow: hidden;
+  h1{
+    padding: 0;
+  }
   h2{
     padding: 2.315% 0 5.788% 0; /* 20/(960-10%)  50/864 */
   }
@@ -372,6 +418,15 @@ hr{
 
 /*section s_main-info*/
 .b_with-left-image{
+  &:after {
+    /*убираем схлопывание*/
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
   .image-inner {
     float: left;
     @media @mobile{
@@ -381,9 +436,27 @@ hr{
   .description-inner {
     float: left;
     text-align: left;
+    h2{
+      margin-top: -11px;
+    }
+    h4{
+      margin-top: -6px;
+    }
+    h5{
+      margin-top: -5px;
+    }
+    h6{
+      margin-top: -5px;
+    }
     @media @mobile{
       width: 100%;
       padding: 0;
+      h2,
+      h4,
+      h5,
+      h6{
+        margin-top: 0;
+      }
     }
   }
 }
@@ -487,6 +560,29 @@ hr{
     }
   }
 }
+.l-5-col{
+  .col{
+    width: 20%;
+    @media @tablet {
+      width: 33.33333%;
+    }
+    @media @tablet_small {
+      width: 50%;
+    }
+    @media @mobile{
+      width: 100%;
+    }
+    .btn{
+      padding: 7px 10px;
+      font-size: 16px;
+      @media @tablet {
+        padding: 12px 40px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
 .l_columns-inner {
   &.hidden-col{
     .col{
@@ -535,6 +631,31 @@ hr{
     }
     img{
       max-width: 320px;
+    }
+  }
+}
+
+/*DOCTORS*/
+/* s_doctors */
+.s_doctors{
+  &.white{
+    background: @white;
+  }
+  @media @mobile {
+    text-align: center;
+  }
+  .l_columns-inner{
+    padding-bottom: 30px;
+    @media @tablet_small {
+      padding-bottom: 20px;
+    }
+    img{
+      max-width: 320px;
+    }
+    .col{
+      @media @mobile {
+        text-align: center;
+      }
     }
   }
 }
@@ -788,16 +909,16 @@ a.footer-info-inner&:hover{
     background: @white;
   }
   .image-inner {
-    width: 40%;
+    max-width: 40%;
+    margin: 0 5% 0 0;
+    @media @mobile {
+      margin: 0;
+    }
   }
   .description-inner {
     width: 55%;
-    padding: 0 0 0 5%;
-    margin-top: -11px;
     @media @mobile {
       width: 100%;
-      padding: 0;
-      margin-top: 0;
     }
   }
 }
