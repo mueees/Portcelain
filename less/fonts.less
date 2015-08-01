@@ -219,14 +219,27 @@ p{
       color: @maroon;
     }
     @media @tablet {
+      color: @white;
       font-size: 26px;
       line-height: 1.77;
+      &:hover {
+        color: @black;
+      }
+    }
+    @media @mobile {
+      font-size: 20px;
     }
   }
   .language-link {
     &.select {
       a {
         color: @maroon;
+        @media @tablet {
+          color: @white;
+          &:hover {
+            color: @black;
+          }
+        }
       }
     }
   }

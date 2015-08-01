@@ -242,12 +242,31 @@ p {
 @media screen and (max-width: 960px) {
   .languages a,
   .languages span {
+    color: #ffffff;
     font-size: 26px;
     line-height: 1.77;
+  }
+  .languages a:hover,
+  .languages span:hover {
+    color: #000000;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languages a,
+  .languages span {
+    font-size: 20px;
   }
 }
 .languages .language-link.select a {
   color: #903349;
+}
+@media screen and (max-width: 960px) {
+  .languages .language-link.select a {
+    color: #ffffff;
+  }
+  .languages .language-link.select a:hover {
+    color: #000000;
+  }
 }
 /*s_main-info*/
 .s_main-info h1 {

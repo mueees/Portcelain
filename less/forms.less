@@ -145,13 +145,13 @@
 .open-icon-hamburger{
   visibility:hidden;
   background: transparent;
-  top: 30px;
+  top: 35px;
   right: 10px;
   @media @tablet {
    visibility: visible;
   }
   @media @mobile {
-    top: 10px;
+    top: 16px;
   }
 }
 .open-icon-hamburger span::before{
@@ -184,17 +184,17 @@
   top: 0;
   right: 10px;
   @media @tablet {
-   /* top: 50%;
-    margin-top: -23px;/* 46/2
-    right: 25%; */
-    top: 45px;
+    top: 50%;
+    margin-top: -23px;/* 46/2*/
     right: 25%;
   }
   @media @mobile {
-    top: 23px;
+   margin-top: -17px;/*35/2*/
   }
   .languages-open {
-     display: none;
+    background: @maroon;
+    padding: 0 10px;
+    display: none;
    }
   @media @tablet {
     .languages-open{
@@ -217,14 +217,18 @@
   background: @white;
   @media @tablet {
     display: none;
-    top: 46px;
+    top: 50%;
+    margin-top: -69px;/* 138/2 */
     right: 0;
     padding: 0;
     width: auto;
-    background: transparent;
+    background: @maroon;
     &.active{
       display: block;
     }
+  }
+  @media @mobile {
+    margin-top: -53px;/* 105/2 */
   }
  .language-link{
    display: inline-block;

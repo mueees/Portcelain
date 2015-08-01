@@ -141,7 +141,7 @@ $(document).ready(function(){
     function showFormCallBack() {
         $('.form-call-back').addClass('show-form-call-back');
          $('.overlay').addClass('for-form-call-back').css('display', 'block');
-        //омена прокрутки
+        //отмена прокрутки
         function OffScroll () {
             var winScrollTop = $(window).scrollTop();
             $(window).bind('scroll',function () {

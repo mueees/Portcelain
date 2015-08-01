@@ -374,7 +374,7 @@ hr {
 }
 @media screen and (max-width: 600px) {
   .s-head .section-content {
-    padding: 10px;
+    padding: 22px 10px;
   }
 }
 .site-logo {
@@ -388,9 +388,7 @@ hr {
 }
 @media screen and (max-width: 600px) {
   .site-logo {
-    width: 39.656%;
-    /* 230/580 */
-    min-width: 170px;
+    width: 180px;
   }
 }
 .site-logo a {
@@ -1439,12 +1437,31 @@ p {
 @media screen and (max-width: 960px) {
   .languages a,
   .languages span {
+    color: #ffffff;
     font-size: 26px;
     line-height: 1.77;
+  }
+  .languages a:hover,
+  .languages span:hover {
+    color: #000000;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languages a,
+  .languages span {
+    font-size: 20px;
   }
 }
 .languages .language-link.select a {
   color: #903349;
+}
+@media screen and (max-width: 960px) {
+  .languages .language-link.select a {
+    color: #ffffff;
+  }
+  .languages .language-link.select a:hover {
+    color: #000000;
+  }
 }
 /*s_main-info*/
 .s_main-info h1 {
@@ -1722,7 +1739,7 @@ p {
 .open-icon-hamburger {
   visibility: hidden;
   background: transparent;
-  top: 30px;
+  top: 35px;
   right: 10px;
 }
 @media screen and (max-width: 960px) {
@@ -1732,7 +1749,7 @@ p {
 }
 @media screen and (max-width: 600px) {
   .open-icon-hamburger {
-    top: 10px;
+    top: 16px;
   }
 }
 .open-icon-hamburger span::before {
@@ -1772,19 +1789,21 @@ p {
 }
 @media screen and (max-width: 960px) {
   .languages {
-    /* top: 50%;
-    margin-top: -23px;/* 46/2
-    right: 25%; */
-    top: 45px;
+    top: 50%;
+    margin-top: -23px;
+    /* 46/2*/
     right: 25%;
   }
 }
 @media screen and (max-width: 600px) {
   .languages {
-    top: 23px;
+    margin-top: -17px;
+    /*35/2*/
   }
 }
 .languages .languages-open {
+  background: #903349;
+  padding: 0 10px;
   display: none;
 }
 @media screen and (max-width: 960px) {
@@ -1808,14 +1827,22 @@ p {
 @media screen and (max-width: 960px) {
   .languages-drop-down {
     display: none;
-    top: 46px;
+    top: 50%;
+    margin-top: -69px;
+    /* 138/2 */
     right: 0;
     padding: 0;
     width: auto;
-    background: transparent;
+    background: #903349;
   }
   .languages-drop-down.active {
     display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languages-drop-down {
+    margin-top: -53px;
+    /* 105/2 */
   }
 }
 .languages-drop-down .language-link {
