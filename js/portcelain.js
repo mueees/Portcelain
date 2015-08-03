@@ -158,6 +158,17 @@ $(document).ready(function(){
     }
 
 
+    /** certificates-slider **/
+    $(document).ready(function() {
+        $(".certificates-slider").fancybox();
+    });
+
+    /** photo-slider **/
+    $(document).ready(function() {
+        $(".photo-slider").fancybox();
+    });
+
+
 });
 
 
