@@ -161,18 +161,49 @@ $(document).ready(function(){
     /** certificates-slider **/
     $(document).ready(function() {
         $(".certificates-slider").fancybox({
+            // Slideshow
+            'autoPlay': true,
+            'playSpeed': 1500,
+
+            // Opening animation
+            'openEffect': 'elastic',
+            'openSpeed': 350,
+
+            // Closing animation
+            'closeEffect': 'elastic',
+            'closeSpeed': 350
         });
     });
 
     /** photo-slider **/
     $(document).ready(function() {
-        $(".photo-slider").fancybox();
+        $(".photo-slider").fancybox({
+            // Slideshow
+            'autoPlay': true,
+            'playSpeed': 1500,
+
+            // Opening animation
+            'openEffect': 'elastic',
+            'openSpeed': 350,
+
+            // Closing animation
+            'closeEffect': 'elastic',
+            'closeSpeed': 350
+        });
     });
 
     /** video-popup **/
     $(document).ready(function() {
         $(".video-popup").fancybox({
-            'padding': 0
+            'padding': 0,
+
+            // Opening animation
+            'openEffect': 'elastic',
+            'openSpeed': 350,
+
+            // Closing animation
+            'closeEffect': 'elastic',
+            'closeSpeed': 350
         });
     });
 
