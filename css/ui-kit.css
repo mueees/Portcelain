@@ -227,15 +227,27 @@ hr {
   white-space: nowrap;
   display: block;
 }
+.breadcrumbs {
+  margin: 0;
+}
 .breadcrumbs li {
   display: inline-block;
   list-style: none;
+  padding: 0;
 }
 .breadcrumbs li:before {
   content: '/';
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  margin-right: 0;
+  vertical-align: baseline;
 }
 .breadcrumbs li:first-child:before {
   content: none;
+}
+.breadcrumbs li a {
+  text-decoration: underline;
 }
 .breadcrumbs li a:hover {
   text-decoration: none;
@@ -257,13 +269,13 @@ hr {
     padding: 0 0 10px 0;
   }
 }
-.list-inner {
+ul {
   list-style: none;
 }
-.list-inner li {
+ul li {
   padding: 5px 0;
 }
-.list-inner li:before {
+ul li:before {
   content: "";
   width: 5px;
   height: 5px;
@@ -456,12 +468,16 @@ hr {
 }
 .b_nav-menu {
   overflow: hidden;
+  margin: 0;
 }
 .b_nav-menu .nav-link {
   display: block;
   float: left;
   cursor: pointer;
   padding: 0 18px 20px 18px;
+}
+.b_nav-menu .nav-link:before {
+  content: none;
 }
 .b_nav-menu .nav-link:last-child {
   padding: 0 0 20px 18px;
@@ -649,13 +665,13 @@ hr {
   text-align: center;
 }
 .l_columns-inner {
-  margin-left: -10px;
+  margin: 0 0 0 -10px;
   font-size: 0;
   text-align: left;
 }
 @media screen and (max-width: 600px) {
   .l_columns-inner {
-    margin-left: 0;
+    margin: 0;
   }
 }
 .l_columns-inner .col {
@@ -667,6 +683,9 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.l_columns-inner .col:before {
+  content: none;
 }
 .l_columns-inner .col .image-inner {
   width: 100%;
@@ -878,6 +897,7 @@ hr {
   color: #000000;
 }
 .b_nav-footer {
+  margin: 0;
   text-align: center;
   position: relative;
 }
@@ -901,6 +921,9 @@ hr {
   padding: 0 0 0 2.128%;
   /* 20/940 */
   margin-left: -4px;
+}
+.b_nav-footer li:before {
+  content: none;
 }
 .b_nav-footer li:first-child {
   padding: 0;
@@ -990,6 +1013,9 @@ hr {
 .content-address-photo {
   padding: 0 0 35px 0;
 }
+a.footer-info-inner {
+  text-decoration: underline;
+}
 a.footer-info-inner:hover {
   text-decoration: none;
 }
@@ -1041,15 +1067,19 @@ a.footer-info-inner:hover {
 .b_nav-social {
   display: inline-block;
   vertical-align: middle;
+  margin: 0;
 }
 .b_nav-social li {
   float: left;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
   list-style: none;
+}
+.b_nav-social li:before {
+  content: none;
 }
 @media screen and (max-width: 800px) {
   .b_nav-social li:first-child {
-    padding-left: 0;
+    padding: 0;
   }
 }
 .b_nav-social li a {
@@ -1094,9 +1124,13 @@ a.footer-info-inner:hover {
 .b_nav-btn {
   display: inline-block;
   list-style: none;
+  margin: 0;
 }
 .b_nav-btn li {
   padding: 0 0 5px 0;
+}
+.b_nav-btn li:before {
+  content: none;
 }
 .b_nav-btn li:last-child {
   padding: 0;
@@ -1187,6 +1221,9 @@ a.btn {
   text-decoration: none;
   display: inline-block;
 }
+a.btn:hover {
+  text-decoration: none;
+}
 button.btn {
   margin: 10px;
 }
@@ -1219,7 +1256,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a,
-.list-inner a {
+ul a {
   color: inherit;
   text-decoration: none;
 }
@@ -1229,7 +1266,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover,
-.list-inner a:hover {
+ul a:hover {
   text-decoration: underline;
 }
 h1 {
@@ -1253,7 +1290,6 @@ h1 {
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 36px;
-    line-height: 1.333;
   }
 }
 .b_with-left-image .description-inner h1 {
@@ -1337,7 +1373,7 @@ h6 {
   color: #000000;
   padding: 0 0 10px 0;
 }
-.list-inner,
+ul,
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -1348,7 +1384,7 @@ p {
   margin: 0 0 25px 0;
 }
 @media screen and (max-width: 800px) {
-  .list-inner,
+  ul,
   p {
     margin: 0 0 15px 0;
   }
@@ -1379,6 +1415,7 @@ p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 600;
   font-size: 18px;
+  line-height: 1;
   text-transform: uppercase;
 }
 .b_nav-menu .nav-link:hover a {
@@ -1481,6 +1518,7 @@ p {
 .languages a:hover,
 .languages span:hover {
   color: #903349;
+  text-decoration: none;
 }
 @media screen and (max-width: 960px) {
   .languages a,
@@ -1509,6 +1547,7 @@ p {
   }
   .languages .language-link.select a:hover {
     color: #000000;
+    text-decoration: none;
   }
 }
 /*s_main-info*/
@@ -1871,6 +1910,7 @@ p {
   width: 116px;
   text-align: center;
   background: #ffffff;
+  margin: 0;
 }
 @media screen and (max-width: 960px) {
   .languages-drop-down {
@@ -1894,8 +1934,12 @@ p {
   }
 }
 .languages-drop-down .language-link {
+  padding: 0;
   display: inline-block;
   border: 1px solid #ffffff;
+}
+.languages-drop-down .language-link:before {
+  content: none;
 }
 .languages-drop-down .language-link:hover {
   border: 1px solid #903349;

@@ -215,6 +215,7 @@
   width: 116px;
   text-align: center;
   background: @white;
+  margin: 0;
   @media @tablet {
     display: none;
     top: 50%;
@@ -231,6 +232,10 @@
     margin-top: -53px;/* 105/2 */
   }
  .language-link{
+   &:before{
+     content: none;
+   }
+   padding: 0;
    display: inline-block;
    border: 1px solid #ffffff;
    &:hover{

@@ -22,12 +22,19 @@
     padding: 12px 30px;
   }
 }
-a.btn{
-  text-decoration: none;
-  display: inline-block;
+a{
+  &.btn{
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+      text-decoration:none;
+    }
+  }
 }
-button.btn{
-  margin: 10px;
+button{
+  &.btn{
+    margin: 10px;
+  }
 }
 .btn-white{
   color: @maroon;

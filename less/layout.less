@@ -78,11 +78,18 @@ hr{
   display: block;
 }
 .breadcrumbs {
+  margin: 0;
   li{
     display: inline-block;
     list-style: none;
+    padding: 0;
     &:before{
       content: '/';
+      width: inherit;
+      height: inherit;
+      background: inherit;
+      margin-right: 0;
+      vertical-align: baseline;
     }
     &:first-child{
       &:before{
@@ -90,6 +97,7 @@ hr{
       }
     }
     a {
+      text-decoration: underline;
       &:hover{
         text-decoration: none;
       }
@@ -111,7 +119,7 @@ hr{
     padding: 0 0 10px 0;
   }
 }
-.list-inner{
+ul{
   list-style: none;
   li{
     padding: 5px 0;
@@ -285,7 +293,11 @@ hr{
 }
 .b_nav-menu {
   overflow: hidden;
+  margin: 0;
   .nav-link {
+    &:before{
+      content: none;
+    }
     display: block;
     float: left;
     cursor: pointer;
@@ -473,13 +485,16 @@ hr{
   }
 }
 .l_columns-inner {
-  margin-left: -10px;
+  margin: 0 0 0 -10px;
   font-size: 0;
   text-align: left;
   @media @mobile {
-    margin-left: 0;
+    margin: 0;
   }
   .col {
+    &:before {
+      content: none;
+    }
     text-align: left;
     vertical-align: top;
     display: inline-block;
@@ -689,6 +704,7 @@ hr{
   }
 }
 .b_nav-footer {
+  margin: 0;
   text-align: center;
   position: relative;
   @media @tablet_small {
@@ -699,6 +715,9 @@ hr{
     height: auto;
   }
   li {
+    &:before{
+      content: none;
+    }
     width: 31.9%;
     max-width: 300px;
     text-align: left;
@@ -785,8 +804,13 @@ hr{
 .content-address-photo{
   padding: 0 0 35px 0;
 }
-a.footer-info-inner&:hover{
-  text-decoration: none;
+a{
+  &.footer-info-inner{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 .b_social-icons {
   overflow: hidden;
@@ -826,13 +850,17 @@ a.footer-info-inner&:hover{
 .b_nav-social{
   display: inline-block;
   vertical-align: middle;
+  margin: 0;
   li{
+    &:before{
+      content: none;
+    }
     float: left;
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     list-style: none;
     @media @tablet_small {
       &:first-child{
-        padding-left: 0;
+        padding: 0;
       }
     }
     a{
@@ -872,7 +900,11 @@ a.footer-info-inner&:hover{
 .b_nav-btn{
   display: inline-block;
   list-style: none;
+  margin: 0;
   li{
+    &:before{
+      content: none;
+    }
     padding: 0 0 5px 0;
     &:last-child{
       padding: 0;

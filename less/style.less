@@ -40,9 +40,14 @@
 .b_nav-services {
   text-align: center;
   font-size: 0;
+  margin: 0;
 }
 .service{
+  &:before{
+    content: none;
+  }
   display: inline-block;
+  padding: 0;
   margin: 0 0.994% 1.596%; /*15/940*/
   width: 136px;
   border: 1px solid @gray;
@@ -52,6 +57,9 @@
   a {
     display: block;
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 .icon-container-services {
@@ -105,16 +113,16 @@
   &.white {
     background: @white;
   }
-  .breadcrumbs{
-    position: absolute;
-    top: 15px;
-    @media @mobile {
-      position: relative;
-      top: -25px;
-    }
-  }
+ .breadcrumbs{
+   position: absolute;
+   top: 15px;
+   @media @mobile {
+     position: relative;
+     top: -25px;
+   }
+ }
   h1{
-    display: inline-block;
+    display: inline;
     padding: 0;
   }
   .l_item{
@@ -150,7 +158,6 @@
     }
   }
 }
-
 .back{
   display: inline-block;
   margin-right: 4.788%; /* 45/940 */
