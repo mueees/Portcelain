@@ -42,8 +42,13 @@ h1 {
   }
 }
 .b_with-left-image .description-inner h1 {
-  font-weight: 400;
+  font-weight: 300;
   margin-top: -6px;
+}
+@media screen and (max-width: 600px) {
+  .b_with-left-image .description-inner h1 {
+    font-weight: 600;
+  }
 }
 .b_with-left-image .description-inner h2 {
   margin-top: -11px;
@@ -299,15 +304,6 @@ p {
     text-decoration: none;
   }
 }
-/*s_main-info*/
-.s_main-info h1 {
-  font-weight: 300;
-}
-@media screen and (max-width: 600px) {
-  .s_main-info h1 {
-    font-weight: 600;
-  }
-}
 /*s_services*/
 .icon-title-services {
   text-transform: lowercase;
@@ -538,14 +534,6 @@ p {
 .s_page-content h1 {
   display: inline;
   padding: 0;
-}
-.s_page-content .l_item {
-  padding: 7.448% 0;
-  /* 70/960 */
-  overflow: hidden;
-}
-.s_page-content .l_item:last-child {
-  padding: 7.448% 0 1px 0;
 }
 .s_page-content .image-inner {
   max-width: 23.405%;

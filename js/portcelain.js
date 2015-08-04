@@ -160,12 +160,20 @@ $(document).ready(function(){
 
     /** certificates-slider **/
     $(document).ready(function() {
-        $(".certificates-slider").fancybox();
+        $(".certificates-slider").fancybox({
+        });
     });
 
     /** photo-slider **/
     $(document).ready(function() {
         $(".photo-slider").fancybox();
+    });
+
+    /** video-popup **/
+    $(document).ready(function() {
+        $(".video-popup").fancybox({
+            'padding': 0
+        });
     });
 
 

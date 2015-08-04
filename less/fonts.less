@@ -37,8 +37,11 @@ h1{
 .b_with-left-image{
   .description-inner{
     h1{
-      font-weight: 400;
+      font-weight: 300;
       margin-top: -6px;
+      @media @mobile {
+        font-weight: 600;
+      }
     }
     h2{
       margin-top: -11px;
@@ -274,16 +277,6 @@ p{
           }
         }
       }
-    }
-  }
-}
-
-/*s_main-info*/
-.s_main-info{
-  h1 {
-    font-weight: 300;
-    @media @mobile{
-      font-weight: 600;
     }
   }
 }
