@@ -11,6 +11,20 @@ $(document).ready(function(){
         }
     );
 
+    /**b_inner-slider**/
+    $('.b_inner-slider').slick(
+        {   infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            pauseOnHover: false,
+            fade: true,
+            cssEase: 'linear'
+        }
+    );
+
     /**scrolling**/
     $('.scroll-to-contacts').click(function(){
         var elementClick=$('.s_footer').offset().top;

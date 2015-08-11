@@ -16,7 +16,12 @@
   -moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
   box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
-
+.background-size (@background-size){
+  -webkit-background-size: @background-size;
+  -o-background-size: @background-size;
+  -moz-background-size: @background-size;
+  background-size: @background-size;
+}
 .box-sizing (@type: border-box) {
   -webkit-box-sizing: @type;
   -moz-box-sizing:    @type;
