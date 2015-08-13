@@ -136,7 +136,7 @@ $(document).ready(function(){
     }
 
     function closeLanguages() {
-        $('.languages-drop-down').toggleClass('active');
+        $('.languages-drop-down').removeClass('active');
     }
 
     /** popup form-call-back **/
