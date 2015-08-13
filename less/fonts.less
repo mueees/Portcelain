@@ -320,52 +320,6 @@ p{
   }
 }
 
-.languages {
-  z-index: 100;
-  @media @tablet {
-    z-index: auto;
-  }
-  a,
-  span {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1;
-    color: @black;
-    &:hover {
-      color: @maroon;
-      text-decoration: none;
-    }
-    @media @tablet {
-      color: @white;
-      font-size: 26px;
-      line-height: 1.77;
-      &:hover {
-        color: @black;
-      }
-    }
-    @media @mobile {
-      font-size: 20px;
-    }
-  }
-  .language-link {
-    &.select {
-      a {
-        color: @maroon;
-        @media @tablet {
-          color: @white;
-          &:hover {
-            color: @black;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-}
-
 /*s_services*/
 .icon-title-services{
   text-transform: lowercase;
