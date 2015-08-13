@@ -170,6 +170,8 @@ h6{
   h1{
     display: inline;
     padding: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 .s_slogan{
@@ -192,16 +194,19 @@ ol,
 p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: @font-size;
-  line-height: @line-height;
-  @font-size: 16px;
-  @line-height: 1.44;
+  font-size: 16px;
+  line-height: 1.44;
   color:  @black;
   overflow: hidden;
   margin: 0 0 25px 0;
   @media @tablet_small {
     margin: 0 0 15px 0;
   }
+}
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.44;
 }
 .s_align-center{
   .l_columns-inner{
