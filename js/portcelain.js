@@ -136,16 +136,12 @@ $(document).ready(function(){
     }
 
     function closeLanguages() {
-        $('.languages-drop-down').removeClass('active');
-        $('.language-link').removeClass('select');
-        $(this).addClass('select');
+        $('.languages-drop-down').toggleClass('active');
     }
-
 
     /** popup form-call-back **/
     // Show form-call-back
     $(document).on('click', ".btn-call-back", showFormCallBack);
-
 
     // Hide form-call-back
     $(document).on('click', ".icon-form-close", closeFormCallBack);
@@ -155,7 +151,7 @@ $(document).ready(function(){
     function showFormCallBack() {
         $('.form-call-back').addClass('show-form-call-back');
          $('.overlay').addClass('for-form-call-back').css('display', 'block');
-        //отмена прокрутки
+
         function OffScroll () {
             var winScrollTop = $(window).scrollTop();
             $(window).bind('scroll',function () {
@@ -167,10 +163,9 @@ $(document).ready(function(){
     function closeFormCallBack() {
         $('.overlay').removeClass('for-form-call-back').css('display', 'none');
         $('.form-call-back').removeClass('show-form-call-back');
-        //выключить отмену прокрутки
+
         $(window).unbind('scroll');
     }
-
 
     /** certificates-slider **/
     $(document).ready(function() {
@@ -220,8 +215,4 @@ $(document).ready(function(){
             'closeSpeed': 350
         });
     });
-
-
 });
-
-
