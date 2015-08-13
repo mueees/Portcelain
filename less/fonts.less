@@ -194,8 +194,10 @@ ol,
 p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.44;
+  font-size: @font-size;
+  line-height: @line-height;
+  @font-size: 16px;
+  @line-height: 1.44;
   color:  @black;
   overflow: hidden;
   margin: 0 0 25px 0;
@@ -203,10 +205,9 @@ p{
     margin: 0 0 15px 0;
   }
 }
-a {
+.section-content a {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1.44;
 }
 .s_align-center{
   .l_columns-inner{
@@ -319,6 +320,52 @@ a {
         line-height: 1.2;
         @media @tablet {
           color: @white;
+        }
+      }
+    }
+  }
+}
+
+.languages {
+  z-index: 100;
+  @media @tablet {
+    z-index: auto;
+  }
+  a,
+  span {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    color: @black;
+    &:hover {
+      color: @maroon;
+      text-decoration: none;
+    }
+    @media @tablet {
+      color: @white;
+      font-size: 26px;
+      line-height: 1.77;
+      &:hover {
+        color: @black;
+      }
+    }
+    @media @mobile {
+      font-size: 20px;
+    }
+  }
+  .language-link {
+    &.select {
+      a {
+        color: @maroon;
+        @media @tablet {
+          color: @white;
+          &:hover {
+            color: @black;
+            text-decoration: none;
+          }
         }
       }
     }
