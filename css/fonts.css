@@ -192,6 +192,8 @@ h6 {
 .s_page-content h1 {
   display: inline;
   padding: 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 .s_slogan h1 {
   color: #ffffff;
@@ -223,6 +225,10 @@ p {
   p {
     margin: 0 0 15px 0;
   }
+}
+.section-content a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 .s_align-center .l_columns-inner p {
   text-align: left;
@@ -267,6 +273,8 @@ p {
   text-decoration: none;
   color: #000000;
   line-height: 1.2;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
 }
 @media screen and (max-width: 960px) {
   .b_nav-menu .nav-link a {
@@ -329,6 +337,8 @@ p {
   text-decoration: none;
   color: #000000;
   line-height: 1.2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
 }
 @media screen and (max-width: 960px) {
   .sub-menu-l2 .nav-link.device-menu-tab a {
@@ -342,6 +352,59 @@ p {
 @media screen and (max-width: 960px) {
   .sub-menu-l2 .nav-link.device-menu-tab span {
     color: #ffffff;
+  }
+}
+.languages {
+  z-index: 100;
+}
+@media screen and (max-width: 960px) {
+  .languages {
+    z-index: auto;
+  }
+}
+.languages a,
+.languages span {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #000000;
+}
+.languages a:hover,
+.languages span:hover {
+  color: #903349;
+  text-decoration: none;
+}
+@media screen and (max-width: 960px) {
+  .languages a,
+  .languages span {
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 1.77;
+  }
+  .languages a:hover,
+  .languages span:hover {
+    color: #000000;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languages a,
+  .languages span {
+    font-size: 20px;
+  }
+}
+.languages .language-link.select a {
+  color: #903349;
+}
+@media screen and (max-width: 960px) {
+  .languages .language-link.select a {
+    color: #ffffff;
+  }
+  .languages .language-link.select a:hover {
+    color: #000000;
+    text-decoration: none;
   }
 }
 /*s_services*/

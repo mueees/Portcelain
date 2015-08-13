@@ -457,6 +457,8 @@ ol li:before {
     white-space: nowrap;
     width: 95%;
     display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
   }
 }
 .b_nav-menu .nav-link.device-menu-tab.mobile {
@@ -501,9 +503,11 @@ ol li:before {
 .sub-menu-l2 .nav-link:hover {
   background: #903349;
 }
-.sub-menu-l2 .nav-link a {
+.sub-menu-l2 .nav-link a,
+.sub-menu-l2 .nav-link span {
   display: block;
   padding: 13px 20px;
+  font-size: 26px;
 }
 @media screen and (max-width: 960px) {
   .sub-menu-l2 .nav-link.device-menu-tab {
@@ -511,7 +515,7 @@ ol li:before {
     width: 100%;
     border-bottom: none;
     background: #903349;
-    padding: 15px 20px;
+    padding: 0;
   }
   .sub-menu-l2 .nav-link.device-menu-tab:hover {
     background: #ffffff;
@@ -1109,4 +1113,8 @@ a.footer-info-inner:hover {
   .s_left-img-float .description-inner {
     width: 100%;
   }
+}
+.highlight {
+  color: #903349;
+  font-weight: 600;
 }

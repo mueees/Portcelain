@@ -433,6 +433,8 @@ ol{
           white-space: nowrap;
           width: 95%;
           display: block;
+          font-family: "Open Sans",sans-serif;
+          font-size: 26px;
         }
       }
       &.mobile {
@@ -451,12 +453,14 @@ ol{
   left: -85px;
   width: 260px;
   .drop-shadow (0, 0, 10px, 0, 0.5);
+
   @media @tablet {
     width: 100%;
     top: 66px;
     left: 0;
     right: 0;
   }
+
   .nav-link{
     display: block;
     float: none;
@@ -465,16 +469,20 @@ ol{
     border-bottom: 1px solid @hex_gray;
     text-align: left;
     cursor: pointer;
+
     &:last-child{
       border-bottom: none;
       padding: 0;
     }
+
     &:hover{
       background: @maroon;
     }
-    a {
+
+    a, span {
       display: block;
       padding: 13px 20px;
+      font-size: 26px;
     }
     &.device-menu-tab{
       @media @tablet {
