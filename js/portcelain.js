@@ -136,7 +136,7 @@ $(document).ready(function(){
     }
 
     function closeLanguages() {
-        $('.languages-drop-down').toggleClass('active');
+        $('.languages-drop-down').removeClass('active');
     }
 
     /** popup form-call-back **/
@@ -167,7 +167,7 @@ $(document).ready(function(){
         $(window).unbind('scroll');
     }
 
-    /** certificates-slider **/
+    /** init fancybox **/
     $(document).ready(function() {
         $(".certificates-slider").fancybox({
             // Slideshow
@@ -182,10 +182,19 @@ $(document).ready(function(){
             'closeEffect': 'elastic',
             'closeSpeed': 350
         });
-    });
 
-    /** photo-slider **/
-    $(document).ready(function() {
+        $(".video-popup").fancybox({
+            'padding': 0,
+
+            // Opening animation
+            'openEffect': 'elastic',
+            'openSpeed': 350,
+
+            // Closing animation
+            'closeEffect': 'elastic',
+            'closeSpeed': 350
+        });
+
         $(".photo-slider").fancybox({
             // Slideshow
             'autoPlay': true,
@@ -199,20 +208,14 @@ $(document).ready(function(){
             'closeEffect': 'elastic',
             'closeSpeed': 350
         });
-    });
 
-    /** video-popup **/
-    $(document).ready(function() {
-        $(".video-popup").fancybox({
-            'padding': 0,
+        $(".fancy-pop-up").fancybox({
+            'transitionIn'  : 'elastic',
+            'transitionOut' : 'elastic',
 
-            // Opening animation
-            'openEffect': 'elastic',
-            'openSpeed': 350,
+            width: 900,
 
-            // Closing animation
-            'closeEffect': 'elastic',
-            'closeSpeed': 350
+            autoSize: false
         });
     });
 });
