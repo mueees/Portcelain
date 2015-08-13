@@ -112,31 +112,12 @@ $(document).ready(function(){
         $('.header-navigation').removeClass('show-navigation');
     }
 
-
     $(document).on('click', ".device-menu-tab", showTabContent);
 
     function showTabContent() {
         $('.device-menu-tab').removeClass('active');
         $(this).addClass('active');
         $('.sub-menu-l2').removeClass('active');
-    }
-
-
-    /**languages menu**/
-        // Show languages menu (for devices)
-    $(document).on('click', ".languages-open", showLanguages);
-
-    // Hide languages menu (for devices)
-    $(document).on('click', closeLanguages);
-
-    function showLanguages(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $('.languages-drop-down').toggleClass('active');
-    }
-
-    function closeLanguages() {
-        $('.languages-drop-down').removeClass('active');
     }
 
     /** popup form-call-back **/
@@ -216,6 +197,55 @@ $(document).ready(function(){
             width: 900,
 
             autoSize: false
+        });
+
+        function LanguageMobile(options){
+            this.$el = options.$el;
+            this.$window = $(window);
+
+            this.init();
+        }
+
+        LanguageMobile.prototype = {
+            isMobileOrDesktop: function () {
+                return this.$window.width() < 900;
+            },
+
+            isMenuOpen: function () {
+                return this.$el.hasClass('languages-drop-down-open');
+            },
+
+            init: function () {
+                var me = this;
+
+                $(document).on('click', function(e){
+                    if( me.isMobileOrDesktop() ) {
+                        me.closeMenu();
+                    }
+                });
+
+                this.$el.on('click', 'a', function (e) {
+                    if( me.isMobileOrDesktop() ) {
+                        if(!me.isMenuOpen()){
+                            e.preventDefault();
+                            e.stopPropagation();
+                            me.openMenu();
+                        }
+                    }
+                });
+            },
+
+            openMenu: function () {
+                this.$el.addClass('languages-drop-down-open');
+            },
+
+            closeMenu: function () {
+                this.$el.removeClass('languages-drop-down-open');
+            }
+        };
+
+        new LanguageMobile({
+            $el: $('.languages-drop-down')
         });
     });
 });
