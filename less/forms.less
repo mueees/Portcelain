@@ -50,6 +50,9 @@
   top: 45px;
   right: 0;
   .drop-shadow (0, 0, 10px, 0, 0.5);
+  &.active {
+    display: block;
+  }
   @media @tablet {
     display: block;
     top: 0;
@@ -254,7 +257,8 @@
      }
    }
    a {
-     padding: 0 7px;
+     padding: 7px;
+     display: inline-block;
      @media @tablet {
        padding: 0;
       }
