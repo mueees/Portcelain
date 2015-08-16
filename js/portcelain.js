@@ -29,6 +29,7 @@ $(document).ready(function(){
     $('.scroll-to-contacts').click(function(){
         var elementClick=$('.s_footer').offset().top;
         $('html,body').animate({scrollTop: elementClick},1500);
+        closeMenu();
         return false;
     });
 
