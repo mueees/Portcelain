@@ -223,6 +223,8 @@ $(document).ready(function(){
             autoSize: false
         });
 
+        $(".popup").fancybox({});
+
         function LanguageMobile(options){
             this.$el = options.$el;
             this.$window = $(window);
