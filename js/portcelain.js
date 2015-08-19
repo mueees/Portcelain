@@ -80,8 +80,10 @@ $(document).ready(function(){
             var searchRequest = $inputSearch.val();
             searchRequest = $.trim(searchRequest);
 
+            var url = ( Portcelaine.config.language != 'ru' ) ? '/' + Portcelaine.config.language + '/' : '/';
+
             if(searchRequest){
-                window.location.href = '/search.html?query=' + searchRequest;
+                window.location.href = url + 'search.html?query=' + searchRequest;
             }
         });
 
