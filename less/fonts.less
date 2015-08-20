@@ -2,6 +2,10 @@
 @import "colors.less";
 @import "breakpoints";
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 blockquote{
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
@@ -14,6 +18,7 @@ h5,
 h6,
 ul,
 ol{
+  word-wrap: break-word;
   a{
     color: inherit;
     text-decoration: none;
@@ -28,7 +33,7 @@ h1{
   font-weight: 600;
   line-height: 1;
   color: @maroon;
-  padding: 0 0 40px 0;
+  padding: 0 0 50px 0;
   @media @tablet{
     font-size: 41px;
   }
@@ -37,7 +42,25 @@ h1{
   }
   @media @mobile{
     font-size: 36px;
+    padding-bottom: 20px;
   }
+}
+.large-slogan {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  @media @tablet{
+    font-size: 41px;
+  }
+  @media @mobile{
+    font-size: 36px;
+  }
+}
+.large-slogan-title {
+  .large-slogan;
+  color:@maroon;
+  padding-bottom: 40px;
 }
 h2{
   font-family: 'Open Sans', sans-serif;
@@ -45,7 +68,7 @@ h2{
   font-weight: 600;
   line-height: 1.333;
   color: @black;
-  padding: 0 0 30px 0;
+  padding: 0 0 10px 0;
   @media @tablet{
     font-size: 33px;
   }
@@ -58,8 +81,6 @@ h4,
 h5,
 h6{
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
   color: @maroon;
   line-height: 1.25;
   padding: 10px 0 30px 0;
@@ -68,6 +89,12 @@ h6{
     padding: 10px 0 20px 0;
   }
 }
+
+h3{
+  font-size: 24px;
+  padding: 0 0 20px 0;
+}
+
 h4{
   font-size: 22px;
   padding: 0 0 20px 0;
@@ -83,53 +110,7 @@ h6{
   padding: 0 0 10px 0;
 }
 
-.b_with-left-image{
-  .description-inner{
-    h1{
-      display: inline-block;
-      font-weight: 300;
-      margin-top: -6px;
-      @media @mobile {
-        font-weight: 600;
-      }
-    }
-    h2{
-      margin-top: -11px;
-    }
-    h4{
-      margin-top: -6px;
-    }
-    h5{
-      margin-top: -5px;
-    }
-    h6{
-      margin-top: -5px;
-    }
-    ol{
-      margin-top: -9px;
-    }
-    ul{
-      margin-top: -9px;
-    }
-    p{
-      margin-top: -4px;
-    }
-    @media @mobile{
-      width: 100%;
-      padding: 0;
-      h1,
-      h2,
-      h4,
-      h5,
-      h6,
-      ol,
-      ul,
-      p{
-        margin-top: 0;
-      }
-    }
-  }
-}
+
 .slide-info {
   h1 {
     padding: 0;
@@ -166,14 +147,7 @@ h6{
     }
   }
 }
-.s_page-content{
-  h1{
-    display: inline;
-    padding: 0;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-  }
-}
+
 .s_slogan{
   h1{
     color: @white;
@@ -199,16 +173,15 @@ p{
   @font-size: 16px;
   @line-height: 1.44;
   color:  @black;
-  overflow: hidden;
   margin: 0 0 25px 0;
   @media @tablet_small {
     margin: 0 0 15px 0;
   }
 }
-.section-content a {
+/*.section-content a {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-}
+}*/
 .s_align-center{
   .l_columns-inner{
     p{
@@ -218,9 +191,6 @@ p{
       }
     }
   }
-}
-.txt-bold{
-    font-weight: 600;
 }
 
 .b_section-title{
@@ -392,6 +362,9 @@ p{
 
 /*s_articles*/
 .cut-4-lines{
+  p, li {
+    overflow: hidden;
+  }
   p{
     @lines-to-show: 4;
     @font-size: 16px;
@@ -400,6 +373,9 @@ p{
   }
 }
 .cut-6-lines{
+  p, li {
+    overflow: hidden;
+  }
   p{
     @lines-to-show: 6;
     @font-size: 16px;
@@ -408,6 +384,9 @@ p{
   }
 }
 .cut-11-lines{
+  p, li {
+    overflow: hidden;
+  }
   p{
     @lines-to-show: 11;
     @font-size: 16px;
@@ -426,6 +405,8 @@ p{
     font-size: 35.36px;
   }
 }
+
+
 .footer-info-inner{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -456,14 +437,8 @@ p{
   }
 }
 
-/*SERVICES*/
-/*s_page-content*/
-.txt-large{
-  font-size: 24px;
-  line-height: 1.33;
-}
 
-/*s_slogan*/
+
 .s_slogan{
   p{
     text-align: center;
@@ -483,41 +458,29 @@ p{
     }
   }
 }
-
-/*SELL-PAGE*/
-/*s_slogan-with-img*/
 .slogan-with-img{
   p {
     font-size: 24px;
   }
 }
 
-/*SELL-PAGE*/
-/* s_four-column */
-/* l-5-col */
-.l-4-col,
-.l-5-col{
-  p{
-    font-size: 14px;
-  }
-  .cut-6-lines {
-    p {
-      font-size: 14px;
-      @lines-to-show: 6;
-      @font-size: 14px;
-      @line-height: 1.44;
-      max-height: @font-size*@line-height*@lines-to-show;
-    }
-  }
-  .cut-4-lines {
-    p {
-      font-size: 14px;
-      @lines-to-show: 4;
-      @font-size: 14px;
-      @line-height: 1.44;
-      max-height: @font-size*@line-height*@lines-to-show;
-    }
+
+
+
+
+.txt-maroon {color: @maroon;}
+.txt-white {color: @white;}
+.txt-gray {color: @gray;}
+.txt-hex_gray {color: @hex_gray;}
+.txt-black {color: @black;}
+.txt-bold{  font-weight: 600;}
+.txt-center {text-align:center;}
+.txt-large{
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  @media @mobile {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
-
-
