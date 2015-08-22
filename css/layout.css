@@ -207,7 +207,7 @@ ul li:before {
   margin-right: 10px;
   vertical-align: middle;
 }
-.check li:before {
+.check-list li:before {
   font-family: 'FontAwesome', sans-serif;
   background: transparent;
   vertical-align: baseline;
@@ -229,29 +229,19 @@ ol li:before {
   margin-right: 10px;
 }
 .section-content ol {
-  margin: 0 0 0 40px;
+  margin: 0 0 25px 40px;
 }
 @media screen and (max-width: 800px) {
   .section-content ol {
-    margin: 0 0 0 20px;
+    margin: 0 0 15px 20px;
   }
 }
-@media screen and (max-width: 600px) {
-  .section-content ol {
-    margin: 0;
-  }
-}
-.section-content ul.check {
-  margin: 0 0 0 40px;
+.section-content ul.check-list {
+  margin: 0 0 25px 40px;
 }
 @media screen and (max-width: 800px) {
-  .section-content ul.check {
-    margin: 0 0 0 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .section-content ul.check {
-    margin: 0;
+  .section-content ul.check-list {
+    margin: 0 0 15px 20px;
   }
 }
 .call-back {

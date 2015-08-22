@@ -683,20 +683,6 @@ p {
     line-height: 1.2;
   }
 }
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts-awesome/fontawesome-webfont.eot");
-  src: url('../fonts-awesome/fontawesome-webfont.svg');
-  src: url('../fonts-awesome/fontawesome-webfont.ttf');
-  src: url('../fonts-awesome/fontawesome-webfont.woff');
-  src: url('../fonts-awesome/fontawesome-webfont.woff2');
-  src: url('../fonts-awesome/FontAwesome.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-.fa-check-square-o:before {
-  content: "\f046";
-}
 /*Style for all*/
 body {
   position: relative;
@@ -906,7 +892,7 @@ ul li:before {
   margin-right: 10px;
   vertical-align: middle;
 }
-.check li:before {
+.check-list li:before {
   font-family: 'FontAwesome', sans-serif;
   background: transparent;
   vertical-align: baseline;
@@ -928,29 +914,19 @@ ol li:before {
   margin-right: 10px;
 }
 .section-content ol {
-  margin: 0 0 0 40px;
+  margin: 0 0 25px 40px;
 }
 @media screen and (max-width: 800px) {
   .section-content ol {
-    margin: 0 0 0 20px;
+    margin: 0 0 15px 20px;
   }
 }
-@media screen and (max-width: 600px) {
-  .section-content ol {
-    margin: 0;
-  }
-}
-.section-content ul.check {
-  margin: 0 0 0 40px;
+.section-content ul.check-list {
+  margin: 0 0 25px 40px;
 }
 @media screen and (max-width: 800px) {
-  .section-content ul.check {
-    margin: 0 0 0 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .section-content ul.check {
-    margin: 0;
+  .section-content ul.check-list {
+    margin: 0 0 15px 20px;
   }
 }
 .call-back {
