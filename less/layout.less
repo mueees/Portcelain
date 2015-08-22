@@ -242,6 +242,28 @@ ol {
   }
 }
 
+.section-content{
+  ol{
+    margin: 0 0 0 40px;
+    @media @tablet_small{
+      margin: 0 0 0 20px;
+    }
+    @media@mobile{
+      margin: 0;
+    }
+  }
+  ul{
+    &.check{
+      margin: 0 0 0 40px;
+      @media @tablet_small{
+        margin: 0 0 0 20px;
+      }
+      @media @mobile{
+        margin: 0;
+      }
+    }
+  }
+}
 .call-back {
   &.gray {
     background: @gray;

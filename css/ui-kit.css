@@ -927,6 +927,32 @@ ol li:before {
   display: inline-block;
   margin-right: 10px;
 }
+.section-content ol {
+  margin: 0 0 0 40px;
+}
+@media screen and (max-width: 800px) {
+  .section-content ol {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-content ol {
+    margin: 0;
+  }
+}
+.section-content ul.check {
+  margin: 0 0 0 40px;
+}
+@media screen and (max-width: 800px) {
+  .section-content ul.check {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-content ul.check {
+    margin: 0;
+  }
+}
 .call-back {
   text-align: center;
   padding: 30px 5px;
