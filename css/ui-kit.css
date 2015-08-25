@@ -992,6 +992,19 @@ ol li:before {
 .b_inner-slider {
   padding: 0 0 50px 0;
 }
+.b_inner-slider .slick-prev:before,
+.b_inner-slider .slick-next:before {
+  color: #903349;
+  font-size: 40px;
+  font-family: 'FontAwesome';
+  content: "\f0a9";
+}
+.b_inner-slider .slick-prev {
+  left: -40px;
+}
+.b_inner-slider .slick-prev:before {
+  content: "\f0a8";
+}
 .inner-slide-img img {
   width: 100%;
   height: auto;

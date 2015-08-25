@@ -320,6 +320,21 @@ ol {
 
 .b_inner-slider {
   padding: 0 0 50px 0;
+
+  .slick-prev:before, .slick-next:before {
+    color: @maroon;
+    font-size: 40px;
+    font-family: 'FontAwesome';
+    content: "\f0a9";
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+
+  .slick-prev:before {
+    content: "\f0a8";
+  }
 }
 
 .inner-slide-img {
