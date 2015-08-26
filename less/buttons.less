@@ -22,7 +22,7 @@
     padding: 12px 30px;
   }
 }
-a{
+a, span{
   &.btn{
     text-decoration: none;
     display: inline-block;
@@ -31,6 +31,16 @@ a{
     }
   }
 }
+span{
+  &.btn{
+    cursor: default;
+    &:hover {
+        background:none;
+        color:  @maroon;
+    }
+  }
+}
+
 button{
   &.btn{
     margin: 10px;
