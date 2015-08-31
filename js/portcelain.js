@@ -227,6 +227,16 @@ $(document).ready(function(){
 
         $(".popup").fancybox({});
 
+        // scroll to cell-page-content
+        $('.scroll-to-cell-page-content').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+
+            $('html,body').animate({
+                scrollTop: $('.cell-page-content').offset().top
+            }, 1000);
+        });
+
         function LanguageMobile(options){
             this.$el = options.$el;
             this.$window = $(window);
