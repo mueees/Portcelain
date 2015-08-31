@@ -110,7 +110,6 @@ $(document).ready(function(){
     };
 }
 
-
     /**navigation menu**/
     // Show navigation menu (for devices)
     $(document).on('click', ".open-icon-hamburger", showMenu);
@@ -118,7 +117,6 @@ $(document).ready(function(){
     // Hide navigation menu (for devices)
     $(document).on('click', ".close-icon-hamburger", closeMenu);
     $(document).on('click', ".overlay", closeMenu);
-
 
     function showMenu() {
         $('.header-navigation').addClass('show-navigation');
@@ -235,6 +233,16 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: $('.cell-page-content').offset().top
             }, 1000);
+        });
+
+        // accordion
+        $('a.toggle').parents('p').next().slideToggle();
+
+        $('a.toggle').on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            $(this).parents('p').next().slideToggle();
         });
 
         function LanguageMobile(options){
