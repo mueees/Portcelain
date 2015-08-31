@@ -18,6 +18,10 @@
     background: @maroon;
     color: @white;
   }
+  &:active {
+    background: darken(@maroon, 3%);
+    color: @white;
+  }
   @media @mobile {
     padding: 12px 30px;
   }
@@ -53,6 +57,10 @@ button{
     background: @maroon;
     color: @white;
   }
+  &:active {
+    background: darken(@maroon, 3%);
+    color: @white;
+  }
 }
 .btn-maroon{
   color: @white;
@@ -62,6 +70,11 @@ button{
     background: @white;
     color: @maroon;
     border: 1px solid @maroon;
+  }
+  &:active {
+    background: darken(@white, 3%);
+    color: @maroon;
+    border: 1px solid darken(@maroon, 3%);
   }
 }
 .maroon{
